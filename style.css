@@ -108,6 +108,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 	-o-background-size: auto!important;
 	background-size: auto!important;
 }
+.bg-repeat{
+	background:repeat;
+}
 
 
 /* Video Background Styles */
@@ -312,6 +315,12 @@ button{
 
 /* = Text & Icon Styles
 -------------------------------------------------------------- */
+.sm-shadow{
+	text-shadow:0 1px 2px rgba(0,0,0,.3);
+}
+.lg-shadow{
+	text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
 .blockquote{
 	padding:0 20px;
 	border-left:2px solid;
@@ -580,9 +589,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	height:40px;
 	width:40px;
 }
-.proj-img:hover{
-	box-shadow:3px 3px 20px rgba(0,0,0,0.2);
-}
 .img-norm-style{
 	width:380px;
 	height:478px;
@@ -702,6 +708,15 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .card{
 	padding:1% 1% 1% 1%;
 }
+.proj-img{
+	box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+.proj-img:hover{
+	box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+}
+.project{
+	padding:20px 20px 20px 20px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -725,6 +740,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .tc-carmine-pink{
 	color:#E64C3C!important;
+}
+.tc-dark-jungle-green{
+	color:#212121!important;
 }
 
 /* Button colour styles */
@@ -768,6 +786,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Link colour styles */
 
+.ltc-dark-jungle-green{
+	color:#212121!important;
+}
+.ltc-dark-jungle-green:hover{
+	color:#1a1a1a!important;
+}
 .ltc-cerulean-blue{
 	color:#2A5DB0!important;
 }
@@ -904,6 +928,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.card{
 		margin:0.5% 0.5% 0.5% 0.5%;
 	}
+	.project{
+		padding:20px 20px 20px 20px;
+	}
 	
 }
 
@@ -939,6 +966,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.h3-29-style{
 		font-size:24px;
+	}
+	.card{
+	}
+	.project{
+		padding:15px 15px 15px 15px;
 	}
 	
 }
@@ -1005,6 +1037,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.h1-style{
 		font-size:52px;
 	}
+	.project{
+		padding:15px 15px 15px 15px;
+	}
 	
 }
-

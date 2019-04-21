@@ -301,6 +301,8 @@ button{
 	margin-right:5px;
 }
 .dropdown a .caret{
+	-webkit-transition: all 1s ease-in-out; /* For Safari 3.1 to 6.0 */
+    	transition: all 1s ease-in-out;
 	margin:0 0 0 5px}.btn-dropdown .dropdown-menu .dropdown{
 	padding: 3px 20px;
 }

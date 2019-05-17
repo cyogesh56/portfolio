@@ -531,9 +531,6 @@ a[data-lightbox]:hover img{
 	right:20px;
 }
 
-/* = Custom Styling
--------------------------------------------------------------- */
-
 h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"Ubuntu";
 	color:#000000!important;
@@ -560,16 +557,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-weight:700;
 	text-transform:none;
 	text-decoration:none;
-}
-.img-style{
-	box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-	font-family:"Ubuntu";
-	height:300px;
-	width:300px;
-	padding:0% 0% 0% 0%;
-}
-.img-style:hover{
-	box-shadow:0px 0px 20px rgba(0,0,0,0.2);
 }
 .h5-style{
 	font-size:20px;
@@ -657,8 +644,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	height:811px;
 }
 .img-25-style{
-	width:810px;
-	height:971px;
+	width:40px;
+	height:40px;
 }
 .img-screen-mockup2-style{
 	width:810px;
@@ -718,14 +705,54 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .proj-img{
 	box-shadow:0px 0px 5px rgba(0,0,0,0.2);
-	-webkit-transition: all 0.4s ease-in-out; /* For Safari 3.1 to 6.0 */
-  	transition: all 0.4s ease-in-out;
 }
 .proj-img:hover{
 	box-shadow:0px 0px 20px rgba(0,0,0,0.2);
 }
 .project{
 	padding:20px 20px 20px 20px;
+}
+.img-axure-icon-1-style{
+	width:40px;
+	height:40px;
+}
+.img-photosh-style{
+	width:40px;
+	height:40px;
+}
+.img-style{
+	width:40px;
+	height:40px;
+}
+.img-illustrat-style{
+	width:40px;
+	height:40px;
+}
+.img-premiere-pro-style{
+	width:40px;
+	height:40px;
+}
+.img-bloc-7-style{
+	width:40px;
+	height:40px;
+}
+.img-8cnimuku-400x4-style{
+	width:40px;
+	height:40px;
+}
+.img-41-style{
+	width:40px;
+}
+.img-42-style{
+	width:40px;
+}
+.img-38-style{
+	width:40px;
+	height:40px;
+}
+.img-43-style{
+	width:40px;
+	height:40px;
 }
 
 /* = Colour

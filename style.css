@@ -1,6 +1,5 @@
 /*-----------------------------------------------------------------------------------
 	    Yogesh Singh Portfolio
-        Built with Blocs
 -----------------------------------------------------------------------------------*/
  
 body{
@@ -242,11 +241,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 .dropdown-menu .show > .dropdown-toggle::after{
 	transform: rotate(-90deg);
 }
-.dropdown-menu {
-	padding: 1% 1% 1% 1%;
-	-webkit-transition: all 0.2s ease-in-out; /* For Safari 3.1 to 6.0 */
-	transition: all 0.2s ease-in-out;
-}
 
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
@@ -301,17 +295,12 @@ button{
 	margin-right:5px;
 }
 .dropdown a .caret{
-	-webkit-transition: all 1s ease-in-out; /* For Safari 3.1 to 6.0 */
-    	transition: all 1s ease-in-out;
 	margin:0 0 0 5px}.btn-dropdown .dropdown-menu .dropdown{
 	padding: 3px 20px;
 }
 
 /* = Icons
 -------------------------------------------------------------- */
-.icon-sm{
-	font-size:18px!important;
-}
 .icon-md{
 	font-size:30px!important;
 }
@@ -349,8 +338,6 @@ button{
 	padding-bottom:0;
 }
 
-/* = Cards
--------------------------------------------------------------- */
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
 }
@@ -453,15 +440,14 @@ a[data-lightbox]:hover img{
 }
 .next-lightbox, .prev-lightbox{
 	font-size:20px;
-	color:rgba(0,0,0,1);
-	background:rgba(255,255,255,1);
+	color:rgba(255,255,255,.9);
+	background:rgba(0,0,0,.5);
 	transition: all .2s ease-in-out;
 	position: absolute;
 	top:45%;
 	z-index:1;
 	opacity: 0.4;
 	border-radius:.25rem;
-	border: 2px solid black;
 }
 .next-lightbox{
 	padding:6px 8px 1px 13px;
@@ -530,6 +516,9 @@ a[data-lightbox]:hover img{
 .close-full-screen-modal{
 	right:20px;
 }
+
+/* = Custom Styling
+-------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"Ubuntu";
@@ -975,10 +964,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.h1-bloc-0-style{
 		line-height:autopx;
 	}
-	.img-style{
-		width:400px;
-		height:400px;
-	}
 	.col{
 	}
 	.img-norm-style{
@@ -1016,10 +1001,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.h1-bloc-0-style{
 		font-size:42px;
 		line-height:autopx;
-	}
-	.img-style{
-		height:300px;
-		width:300px;
 	}
 	.col{
 		margin-bottom:20px;
@@ -1078,4 +1059,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		padding:15px 15px 15px 15px;
 	}
 	
+	/* Mobile Row Margin Offsets */
+	.voffset-xs{
+		margin-top:30px;
+	}
+	
 }
+

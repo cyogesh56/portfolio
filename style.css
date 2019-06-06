@@ -857,10 +857,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* Bloc image backgrounds */
 
 .bg-bg2{
-	background-image:url("img/bg2.png");
+	background-image:url("./img/bg2.png");
 }
 .bg-bg3{
-	background-image:url("img/bg3.png");
+	background-image:url("./img/bg3.png");
 }
 
 

@@ -1,5 +1,6 @@
 /*-----------------------------------------------------------------------------------
 	    Yogesh Singh Portfolio
+        Built with Blocs
 -----------------------------------------------------------------------------------*/
  
 body{
@@ -41,6 +42,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Sizes */
 
+.bloc-lg{
+	padding:100px 50px;
+}
 .bloc-md{
 	padding:50px;
 }
@@ -96,47 +100,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 .full-width-bloc .carousel img{
 	width:100%;
 	height:auto;
-}
-
-
-/* Background Styles */
-
-.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
-	-webkit-background-size: auto!important;
-	-moz-background-size: auto!important;
-	-o-background-size: auto!important;
-	background-size: auto!important;
-}
-.bg-repeat{
-	background:repeat;
-}
-
-
-/* Video Background Styles */
-
-.video-bg-container, .bloc-video{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	right: -50%;
-	overflow: hidden;
-	transform: translateX(-50%);
-	-webkit-transform:translateX(-50%);
-}
-.bloc-video, .video-bg-container iframe{
-	width: auto;
-	height: auto;
-	min-width: 100%;
-	min-height: 100%;
-	z-index: 0;
-}
-
-
-/* Background Effects */
-
-.b-parallax{
-	background-attachment:fixed;
 }
 
 
@@ -219,6 +182,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	border-color:rgba(0,0,0,.3);
 }
 
+/* Row Margin Offsets */
+
+.voffset-md{
+	margin-top:50px;
+}
+
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -226,6 +195,28 @@ a:hover{text-decoration: none; cursor:pointer;}
 .hero .hero-nav{
 	padding-left:inherit;
 	padding-right:inherit;
+}
+/* = Sticky Nav
+-------------------------------------------------------------- */
+
+.sticky-nav.sticky{
+	position:fixed;
+	top:0;
+	z-index:1000;
+	box-shadow:0 1px 2px rgba(0,0,0,.3);
+	 transition: all .2s ease-out;
+}
+.fill-bloc-top-edge.sticky{
+	background-color:rgba(0, 0, 0, 0);
+	width:100%;
+	max-width: 100%;
+	margin-top: 0;
+	left:0;
+	right:0;
+}
+.fill-bloc-top-edge.sticky .navbar{
+	max-width: 1170px;
+	margin: 0 auto;
 }
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
 	color: rgb(64, 64, 64);
@@ -245,6 +236,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
 .mg-sm{
 	margin-top:10px;
 	margin-bottom:5px;
@@ -283,6 +277,12 @@ button{
 	outline: none!important;
 }
 
+.btn-clean{
+	border:1px solid rgba(0,0,0,.08);
+	border-bottom-color:rgba(0,0,0,.1);
+	text-shadow:0 1px 0 rgba(0,0,1,.1);
+	box-shadow: 0 1px 3px rgba(0,0,1,.25), inset 0 1px 0 0 rgba(255,255,255,.15);
+}
 .btn-wire{
 	background:transparent!important;
 	border:2px solid transparent;
@@ -301,6 +301,9 @@ button{
 
 /* = Icons
 -------------------------------------------------------------- */
+.icon-sm{
+	font-size:18px!important;
+}
 .icon-md{
 	font-size:30px!important;
 }
@@ -311,12 +314,6 @@ button{
 
 /* = Text & Icon Styles
 -------------------------------------------------------------- */
-.sm-shadow{
-	text-shadow:0 1px 2px rgba(0,0,0,.3);
-}
-.lg-shadow{
-	text-shadow:0 2px 5px rgba(0,0,0,.5);
-}
 .blockquote{
 	padding:0 20px;
 	border-left:2px solid;
@@ -338,6 +335,8 @@ button{
 	padding-bottom:0;
 }
 
+/* = Cards
+-------------------------------------------------------------- */
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
 }
@@ -357,6 +356,10 @@ button{
 
 iframe{
 	border:0;
+}
+/* Scroll FX */
+.scroll-fx-in-range{
+	will-change: opacity;
 }
 
 
@@ -534,18 +537,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .h1-style{
 	font-family:Ubuntu;
 	width:100%;
-	font-size:72px;
+	font-size:36px;
+	line-height:48px;
 }
 .h4-style{
 	font-family:Ubuntu;
-}
-.h1-bloc-0-style{
-	font-family:"Ubuntu";
-	font-size:64px;
-	line-height:80px;
-	font-weight:700;
-	text-transform:none;
-	text-decoration:none;
+	font-size:12px;
 }
 .h5-style{
 	font-size:20px;
@@ -570,8 +567,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:5%;
 }
 .navbar-brand img{
-	height:40px;
 	width:40px;
+	height:23px;
 }
 .img-norm-style{
 	width:380px;
@@ -694,11 +691,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .proj-img{
 	box-shadow:0px 0px 5px rgba(0,0,0,0.2);
-	transition: all 0.5s ease-in-out;
 }
 .proj-img:hover{
 	box-shadow:0px 0px 20px rgba(0,0,0,0.2);
-	transition: box-shadow 0.5s ease-in-out;
 }
 .project{
 	padding:20px 20px 20px 20px;
@@ -745,15 +740,31 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:40px;
 	height:40px;
 }
+.h3-bloc-0-style{
+	font-size:20px;
+}
+.h3-39400-style{
+	font-size:16px;
+}
+.h1-bloc-1-style{
+	font-size:36px;
+}
+.h3-bloc-49-style{
+	font-size:16px;
+}
+.img-img-8492--style{
+	width:300px;
+	height:400px;
+}
+.p-bloc-49-style{
+	font-size:16px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
-.bgc-white{
-	background-color:#FFFFFF;
-}
 .bgc-electric-blue{
 	background-color:#88F2F9;
 }
@@ -766,11 +777,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Text colour styles */
 
-.tc-carmine-pink{
-	color:#E64C3C!important;
+.tc-gray-htmlcss-gray{
+	color:#797979!important;
 }
 .tc-dark-jungle-green{
 	color:#212121!important;
+}
+.tc-carmine-pink{
+	color:#E64C3C!important;
 }
 
 /* Button colour styles */
@@ -814,12 +828,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Link colour styles */
 
-.ltc-dark-jungle-green{
-	color:#212121!important;
-}
-.ltc-dark-jungle-green:hover{
-	color:#1a1a1a!important;
-}
 .ltc-cerulean-blue{
 	color:#2A5DB0!important;
 }
@@ -829,21 +837,31 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Icon colour styles */
 
-.icon-white{
-	color:#FFFFFF!important;
-	border-color:#FFFFFF!important;
+.icon-cerulean-blue{
+	color:#2A5DB0!important;
+	border-color:#2A5DB0!important;
+}
+.icon-carmine-pink{
+	color:#E64C3C!important;
+	border-color:#E64C3C!important;
 }
 .icon-dark-jungle-green{
 	color:#212121!important;
 	border-color:#212121!important;
 }
-.icon-cerulean-blue{
-	color:#2A5DB0!important;
-	border-color:#2A5DB0!important;
+.icon-white{
+	color:#FFFFFF!important;
+	border-color:#FFFFFF!important;
 }
 
 /* Bloc image backgrounds */
 
+.bg-bg2{
+	background-image:url("img/bg2.png");
+}
+.bg-bg3{
+	background-image:url("img/bg3.png");
+}
 
 
 
@@ -918,9 +936,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 
 @media (max-width: 991px){
-	.h1-bloc-0-style{
-		line-height:autopx;
-	}
 	.col{
 		padding:15px 15px 15px 15px;
 	}
@@ -959,13 +974,33 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.project{
 		padding:20px 20px 20px 20px;
 	}
+	.h1-style{
+		font-size:36px;
+	}
+	.h3-bloc-0-style{
+		font-size:20px;
+	}
+	
+	/* MD Row Margin Offsets */
+	.voffset-clear-md{
+		margin-top:0;
+	}
+		.voffset-md{
+		margin-top:30px;
+	}
+		.voffset-md-md{
+		margin-top:50px;
+	}
+	
+	/* MD Text Margin Offsets */
+	.mg-md-md{
+		margin-top:10px;
+		margin-bottom:20px;
+	}
 	
 }
 
 @media (max-width: 767px){
-	.h1-bloc-0-style{
-		line-height:autopx;
-	}
 	.col{
 	}
 	.img-norm-style{
@@ -996,14 +1031,42 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.project{
 		padding:15px 15px 15px 15px;
 	}
+	.h1-style{
+		font-size:36px;
+	}
+	.h3-bloc-0-style{
+		font-size:16px;
+	}
+	.h1-bloc-1-style{
+		font-size:32px;
+	}
+	.h3-39400-style{
+		font-size:14px;
+	}
+	.h1-bloc-7-style{
+		font-size:32px;
+	}
+	.h1-bedonor-ux-r-d-style{
+		font-size:32px;
+	}
+	
+	/* Small Row Margin Offsets */
+	.voffset-sm{
+		margin-top:30px;
+	}
+		.voffset-md-sm{
+		margin-top:50px;
+	}
+	
+	/* Small Text Margin Offsets */
+	.mg-sm-sm{
+		margin-top:10px;
+		margin-bottom:5px;
+	}
 	
 }
 
 @media (max-width: 575px){
-	.h1-bloc-0-style{
-		font-size:42px;
-		line-height:autopx;
-	}
 	.col{
 		margin-bottom:20px;
 	}
@@ -1034,7 +1097,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		font-size:16px;
 	}
 	.h1-bloc-7-style{
-		font-size:28px;
+		font-size:32px;
 	}
 	.h3-bloc-1-style{
 		font-size:24px;
@@ -1055,10 +1118,39 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		font-size:24px;
 	}
 	.h1-style{
-		font-size:52px;
+		font-size:20px;
+		line-height:36px;
 	}
 	.project{
 		padding:15px 15px 15px 15px;
+	}
+	.h3-bloc-0-style{
+		font-size:12px;
+	}
+	.p-bloc-0-style{
+		font-size:10px;
+	}
+	.h1-bloc-1-style{
+		font-size:26px;
+	}
+	.h1-bloc-0-style{
+		line-height:38px;
+		font-size:32px;
+	}
+	.p-1-style{
+		font-size:16px;
+	}
+	.img-img-8492--style{
+		height:200px;
+		width:150px;
+	}
+	.h1-bloc-49-style{
+		font-size:32px;
+	}
+	.proj-img{
+	}
+	.h1-bedonor-ux-r-d-style{
+		font-size:32px;
 	}
 	
 	/* Mobile Row Margin Offsets */
@@ -1066,5 +1158,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		margin-top:30px;
 	}
 	
+	/* Mobile Text Margin Offsets */
+	.mg-sm-xs{
+		margin-top:10px;
+		margin-bottom:5px;
+	}
+	
 }
-

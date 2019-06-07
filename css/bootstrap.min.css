@@ -3532,7 +3532,9 @@ input[type=submit].btn-block {
 }
 
 .dropdown-menu.show {
-	display: block
+	display: block;
+	transition: height 2s linear 0.35s;
+	-webkit-transition: height 2s linear 0.35s;
 }
 
 .dropdown-header {

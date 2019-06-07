@@ -20,9 +20,6 @@
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  background: #fff;
-  padding: 15px;
-  border-radius: 3px;
 }
 
 .fa-lg {
@@ -534,6 +531,12 @@
 
 .fa-eject:before {
 	content: "\f052"
+}
+
+.fa-chevron {
+	background: #fff;
+	padding: 15px;
+	border-radius: 3px;
 }
 
 .fa-chevron-left:before {

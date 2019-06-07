@@ -533,11 +533,17 @@
 	content: "\f052"
 }
 
-.fa-chevron {
+.fa-chevron-right {
 	background: #fff;
 	padding: 15px;
 	border-radius: 3px;
 }
+.fa-chevron-left {
+	background: #fff;
+	padding: 15px;
+	border-radius: 3px;
+}
+
 
 .fa-chevron-left:before {
 	content: "\f053"

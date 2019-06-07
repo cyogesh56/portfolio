@@ -3271,8 +3271,6 @@ input[type=submit].btn-block {
 	text-align: left;
 	list-style: none;
 	background-clip: padding-box;
-	background: #ffffff;
-	border: 1px solid rgba(0, 0, 0, .15);
 }
 
 .dropdown-menu-right {
@@ -3329,6 +3327,12 @@ input[type=submit].btn-block {
 }
 
 @media (min-width:992px) {
+	.dropdown-menu {
+	padding: 0.5 rem 0;
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 3px;
+	}
 	.dropdown-menu-lg-right {
 		right: 0;
 		left: auto
@@ -3336,6 +3340,12 @@ input[type=submit].btn-block {
 }
 
 @media (min-width:1200px) {
+	.dropdown-menu {
+	padding: 0.5 rem 0;
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 3px;
+	}
 	.dropdown-menu-xl-right {
 		right: 0;
 		left: auto

@@ -3304,21 +3304,10 @@ input[type=submit].btn-block {
 
 @media (min-width:768px) {
 	.dropdown-menu {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		z-index: 1000;
-		display: none;
-		float: left;
-		min-width: 10rem;
-		margin: .125rem 0 0;
-		font-size: 1rem;
-		color: #212529;
-		text-align: left;
-		list-style: none;
-		background-clip: padding-box;
-		border-top: 1px solid rgba(0, 0, 0, .15);
-		border-bottom: 1px solid rgba(0, 0, 0, .15);
+		padding-left: 0;
+		background: #ffffff;
+		border: 1px solid rgba(0, 0, 0, .15);
+		border-radius: 3px;
 }
 	.dropdown-menu-md-right {
 		right: 0;
@@ -3328,6 +3317,7 @@ input[type=submit].btn-block {
 
 @media (min-width:992px) {
 	.dropdown-menu {
+		padding-left: 0;
 		background: #ffffff;
 		border: 1px solid rgba(0, 0, 0, .15);
 		border-radius: 3px;
@@ -3340,6 +3330,7 @@ input[type=submit].btn-block {
 
 @media (min-width:1200px) {
 	.dropdown-menu {
+		padding-left: 0;
 		background: #ffffff;
 		border: 1px solid rgba(0, 0, 0, .15);
 		border-radius: 3px;

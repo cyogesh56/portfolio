@@ -424,13 +424,13 @@ a[data-lightbox]:hover img{
 	bottom: 5px;
 }
 .close-lightbox{
-	color:#FFF;
+	color:rgba(255,255,255,.9);
 	font-size: 30px;
 	position: absolute;
 	top:20px;
 	right:20px;
 	z-index: 20;
-	background:rgba(0,0,0,.5);
+	background:rgba(255, 255, 255, 0.75);
 	border:none;
 	line-height: 30px;
 	padding:0 9px 5px;

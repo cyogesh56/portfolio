@@ -3271,6 +3271,10 @@ input[type=submit].btn-block {
 	text-align: left;
 	list-style: none;
 	background-clip: padding-box;
+	border-top: 1px solid rgba(0, 0, 0, .15);
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	transition: height 2s linear 0.35s;
+	-webkit-transition: height 2s linear 0.35s;
 }
 
 .dropdown-menu-right {
@@ -3295,6 +3299,8 @@ input[type=submit].btn-block {
 		background-clip: padding-box;
 		border-top: 1px solid rgba(0, 0, 0, .15);
 		border-bottom: 1px solid rgba(0, 0, 0, .15);
+		transition: height 2s linear 0.35s;
+		-webkit-transition: height 2s linear 0.35s;
 	}
 	.dropdown-menu-sm-right {
 		right: 0;
@@ -3308,6 +3314,8 @@ input[type=submit].btn-block {
 		background: #ffffff;
 		border: 1px solid rgba(0, 0, 0, .15);
 		border-radius: 3px;
+		transition: height 2s linear 0.35s;
+		-webkit-transition: height 2s linear 0.35s;
 }
 	.dropdown-menu-md-right {
 		right: 0;
@@ -3321,6 +3329,8 @@ input[type=submit].btn-block {
 		background: #ffffff;
 		border: 1px solid rgba(0, 0, 0, .15);
 		border-radius: 3px;
+		transition: height 2s linear 0.35s;
+		-webkit-transition: height 2s linear 0.35s;
 	}
 	.dropdown-menu-lg-right {
 		right: 0;
@@ -3334,6 +3344,8 @@ input[type=submit].btn-block {
 		background: #ffffff;
 		border: 1px solid rgba(0, 0, 0, .15);
 		border-radius: 3px;
+		transition: height 2s linear 0.35s;
+		-webkit-transition: height 2s linear 0.35s;
 	}
 	.dropdown-menu-xl-right {
 		right: 0;

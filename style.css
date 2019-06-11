@@ -690,9 +690,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .proj-img{
 	box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+	transition: all 0.4s ease-in-out;
 }
 .proj-img:hover{
 	box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+	transition: opacity 0.4s ease-in-out;
 }
 .project{
 	padding:20px 20px 20px 20px;

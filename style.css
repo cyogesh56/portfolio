@@ -401,12 +401,13 @@ a[data-lightbox]:hover img{
 .next-lightbox, .prev-lightbox{
 	font-size:20px;
 	color:rgba(255,255,255,.9);
-	background:rgba(0,0,0,.5);
+	background:rgba(255,255,255,.5);
 	transition: all .2s ease-in-out;
 	position: absolute;
 	top:45%;
 	z-index:1;
 	opacity: 0.4;
+    border: 1px solid gray;
 	border-radius:.25rem;
 }
 .next-lightbox{
@@ -647,10 +648,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	padding:1% 1% 1% 1%;
 }
 .proj-img{
-	box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+    transition: all 0.4s ease-in-out;
 }
 .proj-img:hover{
-	box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+    box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+    transition: box-shadow 0.4s ease-in-out;
 }
 .project{
 	padding:20px 20px 20px 20px;

@@ -1044,7 +1044,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.footer-btn2{
 	}
 	.h2-style{
-		font-size:28px;
+		font-size:24px;
 	}
 	.p-76-style{
 		font-size:16px;
@@ -1111,6 +1111,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.p-bloc-49-style{
 		font-size:10px;
 	}
+    .h1-bloc-63-style{
+        font-size:40px;
+    }
 	
 	/* Mobile Row Margin Offsets */
 	.voffset-xs{
@@ -1118,10 +1121,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	
 	/* Mobile Text Margin Offsets */
-	.mg-sm-xs{
-		margin-top:10px;
-		margin-bottom:5px;
-	}
 		.mg-clear-xs{
 		margin:0;
 	}

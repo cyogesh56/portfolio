@@ -243,6 +243,10 @@ button{
 	background:transparent!important;
 	border:2px solid transparent;
 }
+.btn-xl{
+    padding: 16px 40px;
+    font-size: 28px;
+}
 .icon-spacer{
 	margin-right:5px;
 }
@@ -654,6 +658,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .project{
 	padding:20px 20px 20px 20px;
+    margin-bottom: 20px;
 }
 .img-axure-icon-1-style{
 	width:40px;
@@ -708,6 +713,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .h3-bloc-49-style{
 	font-size:16px;
+    line-height:30px;
 }
 .img-img-8492--style{
 	width:300px;
@@ -724,6 +730,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .btn-style{
 	border-radius:0px 0px 0px 0px;
+}
+.h1-bloc-63-style{
+    font-size:60px;
 }
 
 /* = Colour

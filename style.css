@@ -786,10 +786,69 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .h1-bloc-63-style{
     font-size:60px;
 }
+.feature-col-mt{
+    margin-top:29px;
+}
+.hero-first-col-mb{
+    margin-bottom:30px;
+}
+.img-85-style{
+    width:40px;
+    height:40px;
+}
+.img-86-style{
+    width:40px;
+    height:40px;
+}
+.img-87-style{
+    width:40px;
+    height:40px;
+}
+.p-146-style{
+    line-height:30px;
+}
+.h3-45-style{
+    font-size:72px;
+}
+.h3-46-style{
+    font-size:72px;
+}
+.h3-47-style{
+    font-size:72px;
+}
+.p-177-style{
+    line-height:30px;
+}
+.p-bloc-76-style{
+    line-height:30px;
+}
+.p-bloc-77-style{
+    line-height:30px;
+}
+.p-bloc-78-style{
+    line-height:30px;
+}
+.p-166-style{
+    line-height:30px;
+}
+.p-173-style{
+    line-height:30px;
+}
+.p-bloc-75-style{
+    line-height:30px;
+}
+.p-bloc-70-style{
+    line-height:30px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
+/* Background colour styles */
+
+.bgc-ucla-blue{
+    background-color:#4165A9;
+}
 
 /* Text colour styles */
 
@@ -805,53 +864,64 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .tc-carmine-pink{
     color:#E64C3C!important;
 }
+.tc-white{
+    color:#FFFFFF!important;
+}
 
 /* Button colour styles */
 
-.btn-carmine-pink{
-	background:#E64C3C;
-	color:#FFFFFF!important;
-}
-.btn-carmine-pink:hover{
-	background:#b83d30!important;
-	color:#FFFFFF!important;
-}
-.btn-rich-electric-blue{
-	background:#1892CE;
-	color:#FFFFFF!important;
-}
-.btn-rich-electric-blue:hover{
-	background:#1375a5!important;
-	color:#FFFFFF!important;
-}
 .btn-medium-sea-green{
-	background:#4CAF50;
-	color:#FFFFFF!important;
+    background:#4CAF50;
+    color:#FFFFFF!important;
 }
 .btn-medium-sea-green:hover{
-	background:#3d8c40!important;
-	color:#FFFFFF!important;
+    background:#3d8c40!important;
+    color:#FFFFFF!important;
+}
+.btn-carmine-pink{
+    background:#E64C3C;
+    color:#FFFFFF!important;
+}
+.btn-carmine-pink:hover{
+    background:#b83d30!important;
+    color:#FFFFFF!important;
+}
+.btn-rich-electric-blue{
+    background:#1892CE;
+    color:#FFFFFF!important;
+}
+.btn-rich-electric-blue:hover{
+    background:#1375a5!important;
+    color:#FFFFFF!important;
+}
+.btn-ucla-blue{
+    background:#4165A9;
+    color:#FFFFFF!important;
+}
+.btn-ucla-blue:hover{
+    background:#345187!important;
+    color:#FFFFFF!important;
 }
 .btn-electric-blue{
-	background:#88F2F9;
-	color:rgba(0,0,0,.5)!important;
+    background:#88F2F9;
+    color:rgba(0,0,0,.5)!important;
 }
 .btn-electric-blue:hover{
-	background:#6dc2c7!important;
-	color:rgba(0,0,0,.5)!important;
+    background:#6dc2c7!important;
+    color:rgba(0,0,0,.5)!important;
 }
 .wire-btn-dark-jungle-green{
-	color:#202121!important;
-	border-color:#202121!important;
+    color:#202121!important;
+    border-color:#202121!important;
 }
 
 /* Link colour styles */
 
 .ltc-cerulean-blue{
-	color:#2A5DB0!important;
+    color:#2A5DB0!important;
 }
 .ltc-cerulean-blue:hover{
-	color:#224a8d!important;
+    color:#224a8d!important;
 }
 
 /* Icon colour styles */
@@ -1008,6 +1078,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		margin-top:10px;
 		margin-bottom:20px;
 	}
+    .mg-lg-md{
+        margin-top: 10px;
+        margin-bottom:40px;
+    }
 	
 }
 
@@ -1060,6 +1134,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.h1-bedonor-ux-r-d-style{
 		font-size:32px;
 	}
+    .h1-12-style{
+        font-size:32px;
+    }
 	
 	/* Small Row Margin Offsets */
 	.voffset-sm{
@@ -1069,6 +1146,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		margin-top:50px;
 	}
 	
+}
+
+/* Small Text Margin Offsets */
+.mg-lg-sm{
+    margin-top: 10px;
+    margin-bottom:40px;
+}
+
 }
 
 @media (max-width: 575px){
@@ -1163,16 +1248,23 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     .h1-bloc-63-style{
         font-size:40px;
     }
+    .h1-12-style{
+        font-size:32px;
+    }
 	
-	/* Mobile Row Margin Offsets */
-	.voffset-xs{
-		margin-top:30px;
-	}
-	
-	/* Mobile Text Margin Offsets */
-		.mg-clear-xs{
-		margin:0;
-	}
-	
+    /* Mobile Row Margin Offsets */
+    .voffset-xs{
+        margin-top:30px;
+    }
+    
+    /* Mobile Text Margin Offsets */
+    .mg-lg-xs{
+        margin-top: 10px;
+        margin-bottom:40px;
+    }
+    .mg-clear-xs{
+        margin:0;
+    }
+    
 }
 

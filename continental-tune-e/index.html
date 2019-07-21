@@ -1,174 +1,166 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="keywords" content="yogesh singh, cyogesh56, cy56, 325vvi, yogesh, singh, cyogesh, ux, uxd, ux design, user experience, user experience design, ux projects">
-    <meta name="description" content="Yogesh Singh's UX Design Portfolio.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <title>Continental Tune-E</title>
-    <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            font-family: "Ubuntu";
-
-        }
-        #dialogText {
-            line-height:1.5;
-            padding: 10px 30px;
-            color: white;
-            background-color: #333333;
-        }
-    
-    a {
-        text-decoration: none;
-        color:#2A5DB0;
-    }
-    a:hover {
-        color:#224a8d;
-    }
-        
-        #dialogWrap {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: table;
-            background:url("../img/bg2.png") no-repeat center center;
-        }
-        
-        #dialogWrapCell {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-        }
-        
-        #mainDialog {
-            line-height:1.5;
-            max-width: 400px;
-            margin: 5px;
-            border-radius: 3px;
-            box-shadow:3px 3px 10px rgba(0,0,0,0.2);
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            text-align: left;
-        }
-    #info {
-        line-height:2;
-    }
-        #passArea {
-            padding: 20px 30px;
-            background-color: white;
-        }
-        #passArea > * {
-            margin: 5px auto;
-        }
-        #pass {
-            width: 100%;
-            height: 40px;
-            font-size: 20px;
-            border-radius: 3px;
-            border:1px solid rgba(0,0,0,.5);
-            text-shadow:0 1px 0 rgba(0,0,1,.1);
-            font-family: "Ubuntu";
-        }
-    #pass:focus {
-        border:1.5px solid #2196F3;
-    }
-        
-        #messageWrapper {
-            float: left;
-            vertical-align: middle;
-            line-height: 30px;
-        }
-        
-        .notifyText {
-            display: none;
-        }
-        
-        #invalidPass {
-            color: red;
-        }
-        
-        #success {
-            color: green;
-        }
-        
-        #submitPass {
-            cursor:pointer;
-            padding-top:0.5rem;
-            padding-bottom:0.5rem;
-            padding-left:1rem;
-            padding-right:1rem;
-            font-size: 1.25rem;
-            line-height:1.5;
-            font-family: "Ubuntu";
-            color: #ffffff;
-            border-top-left-radius: 0.3rem;
-            border-top-right-radius: 0.3rem;
-            border-bottom-right-radius: 0.3rem;
-            border-bottom-left-radius: 0.3rem;
-            background: #4caf50;
-            border:1px solid rgba(0,0,0,.08);
-            border-bottom-color:rgba(0,0,0,.1);
-            text-shadow:0 1px 0 rgba(0,0,1,.1);
-            box-shadow: 0 1px 3px rgba(0,0,1,.25), inset 0 1px 0 0 rgba(255,255,255,.15);
-            float: right;
-            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-            transition-property: color, background-color, border-color, box-shadow;
-            transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
-            transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-            transition-delay: 0s, 0s, 0s, 0s;
-        }
-    #submitPass:focus {
-        outline: 1px dotted;
-        outline: 5px auto -webkit-focus-ring-color;
-    }
-    #submitPass:hover {
-        background-color:#3d8c40;;
-    }
-        #contentFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="continental, tune-e, tunee, tune e, continental tune-e, continental tunee, continental tune e, yogesh singh, cyogesh56, cy56, 325vvi, yogesh, singh, cyogesh, ux, uxd, ux design, user experience, user experience design, ux projects">
+        <meta name="description" content="Continental Tune-E User Experience Design project by Yogesh Singh. Tune-E is an industry-leading, innovative and most complete car audtio tuning tool on the market.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <title>Continental Tune-E</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?529">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/feather.min.css">
+            
+                    <style>
+                        html, body {
+                            margin: 0;
+                            width: 100%;
+                            height: 100%;
+                            font-family: "Ubuntu";
+                        }
+                    #dialogText {
+                        padding: 10px 30px;
+                        color: black;
+                        background-color: #ffebee;
+                        background-color: #ffebee;
+                        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ef5350' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+                    }
+                    
+                    #dialogWrap {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: table;
+                        background: url("../img/bg2.png") no-repeat center center;
+                    }
+                    
+                    #dialogWrapCell {
+                        display: table-cell;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                    
+                    #mainDialog {
+                        max-width: 400px;
+                        margin: 5px;
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-color: #FFFFFF;
+                        overflow: hidden;
+                        text-align: left;
+                    }
+                    
+                    #goHome {
+                        background-color:#ffffff;
+                        text-decoration:none;
+                    }
+                    
+                    #goHome:hover {
+                        background-color:#ffffff;
+                        color:000000;
+                        text-decoration:none;
+                    }
+                    
+                    #goHome:active {
+                        background-color:#ffffff;
+                        color:000000;
+                        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                    }
+                    
+                    #hrLine {
+                        border:1px solid #000000;
+                    }
+                    
+                    #passArea {
+                        padding: 20px 30px;
+                        background-color: white;
+                    }
+                    #passArea > * {
+                        margin: 5px auto;
+                    }
+                    #pass {
+                        width: 100%;
+                        height: 40px;
+                        font-size: 20px;
+                    }
+                    
+                    #messageWrapper {
+                        float: left;
+                        vertical-align: middle;
+                        line-height: 30px;
+                    }
+                    
+                    .notifyText {
+                        display: none;
+                    }
+                    
+                    #invalidPass {
+                        color: red;
+                    }
+                    
+                    #success {
+                        color: green;
+                    }
+                    
+                    #submitPass {
+                        font-size: 20px;
+                        border-radius: 5px;
+                        background-color: #4caf50;
+                        border: solid gray 1px;
+                        float: right;
+                    }
+                    #submitPass {
+                        border:1px solid rgba(0,0,0,.08);
+                        border-bottom-color:rgba(0,0,0,.1);
+                        text-shadow:0 1px 0 rgba(0,0,1,.1);
+                        box-shadow: 0 1px 3px rgba(0,0,1,.25), inset 0 1px 0 0 rgba(255,255,255,.15);
+                    }
+                    #submitPass:hover {
+                        background-color: #3d8c40;
+                    }
+                    #submitPass:active {
+                          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                    }
+                    #contentFrame {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    </style>
   </head>
-  <body>
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
-    <div id="dialogWrap">
-        <div id="dialogWrapCell">
-            <div id="mainDialog">
-                <div id="dialogText"><h1>This page is password protected.</h1></div>
-                <div id="passArea">
-                    <p id="info">Please contact <a href="mailto:cyogesh56@gmail.com">cyogesh56@gmail.com</a> to request for password if you don't have one.</p>
-                    <hr>
-                    <br>
-                    <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass" placeholder="Enter password">
-                    <div>
-                        <span id="messageWrapper">
-                            <span id="invalidPass" class="notifyText">Sorry, incorrect password.</span>
-                            <span id="success" class="notifyText">Success!</span>
-                            &nbsp;
-                        </span>
-                        <button id="submitPass" type="button">Submit</button>
-                        <div style="clear: both;"></div>
-                    </div>
+    <body>
+        <iframe id="contentFrame" frameBorder="0"></iframe>
+        <div id="dialogWrap">
+            <div id="dialogWrapCell">
+                <div id="mainDialog">
+                    <div id="dialogText"><h2>This page is password protected.</h2></div>
+                    <div id="passArea">
+                        <button id="goHome" class="btn btn-outline-dark btn-block" onclick="location.href = '../index.html';"><span class="feather-icon icon-arrow-right icon-spacer icon-md"></span>Go back to Home page</button>
+                        &nbsp;
+                        <p>Please contact <a href="mailto:cyogesh56@gmail.com">cyogesh56@gmail.com</a> to request for password if you don't have one.</p>
+                        <hr id="hrLine">
+                        <br>
+                        <p id="passwordPrompt">Password</p>
+                        <input id="pass" type="password" name="pass" class="form-control" placeholder="Enter Password">
+                            <div>
+                                <span id="messageWrapper">
+                                    <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
+                                    <span id="success" class="notifyText">Success!</span>
+                                    &nbsp;
+                                </span>
+                                <button id="submitPass" class="btn btn-success btn-block" type="button">Submit</button>
+                                <div style="clear: both;"></div>
+                            </div>
+                            </div>
                 </div>
             </div>
         </div>
-    </div>
     <script>
 /*
 CryptoJS v3.1.2

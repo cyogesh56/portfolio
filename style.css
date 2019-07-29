@@ -564,6 +564,31 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	float:none;
 	font-size:18px;
 }
+
+.proj-link {
+    display: inline-block;
+    position: relative;
+    color: #474E51;
+}
+
+.proj-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2A5DB0;
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.proj-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .link-style{
 	width:86%;
 	font-family:"Ubuntu";

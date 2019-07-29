@@ -951,9 +951,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-bg2{
 	background-image:url("img/bg2.png");
 }
-.bg-bg3{
-	background-image:url("img/bg3.png");
-}
 
 
 
@@ -1085,6 +1082,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
         margin-top: 10px;
         margin-bottom:40px;
     }
+    .mg-clear-md{
+    	margin:0;
+	}
 	
 }
 
@@ -1152,11 +1152,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 
 /* Small Text Margin Offsets */
-.mg-lg-sm{
-    margin-top: 10px;
-    margin-bottom:40px;
-}
-
+	.mg-lg-sm{
+    		margin-top: 10px;
+    		margin-bottom:40px;
+	}
+	.mg-clear-sm{
+		margin:0;
+	}
+	
 }
 
 @media (max-width: 575px){
@@ -1261,6 +1264,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     }
     
     /* Mobile Text Margin Offsets */
+    .mg-md-xs{
+    	margin-top:10px;
+	margin-bottom:20px;
+	}
     .mg-lg-xs{
         margin-top: 10px;
         margin-bottom:40px;

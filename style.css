@@ -537,6 +537,10 @@ a[data-lightbox]:hover img{
 /* = Custom Styling
 -------------------------------------------------------------- */
 
+    .home-nav {
+        padding: 0px 15px 0px 15px !important;
+    }
+
 h1 {
 	font-family:"Red Hat Display";
 	color:#000000!important;
@@ -897,6 +901,9 @@ p {
 
 /* Background colour styles */
 
+.bgc-white{
+	background-color:#FFFFFF;
+	}
 .bgc-ucla-blue{
     background-color:#4165A9;
 }
@@ -1006,6 +1013,9 @@ p {
 -------------------------------------------------------------- */
 @media (max-width: 1024px)
 {
+    .home-nav {
+        padding: 0px 15px 0px 15px !important;
+    }
     .bloc{
         padding-left: 20px; 
         padding-right: 20px;  
@@ -1017,6 +1027,9 @@ p {
 }
 @media (max-width: 991px)
 {
+    .home-nav {
+        padding: 0px 15px 0px 15px !important;
+    }
     .container{width:100%;}
     .page-container, #hero-bloc{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */
     .bloc{padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);} /* iPhone X Notch Support*/
@@ -1024,6 +1037,9 @@ p {
 }
 @media (max-width: 767px)
 {
+    .home-nav {
+        padding: 0px 15px 0px 15px !important;
+    }
     .page-container{
         overflow-x: hidden;
         position:relative;
@@ -1065,9 +1081,10 @@ p {
 }
 
 @media (max-width: 991px){
-	.col{
-		padding:15px 15px 15px 15px;
-	}
+    .home-nav {
+        padding: 0px 15px 0px 15px !important;
+    }
+
 	.img-diseas-style{
 		height:478px;
 	}
@@ -1137,8 +1154,10 @@ p {
 }
 
 @media (max-width: 767px){
-	.col{
-	}
+    .home-nav {
+        padding: 0px 15px 0px 15px !important;
+    }
+
 	.img-norm-style{
 		height:378px;
 	}
@@ -1211,9 +1230,10 @@ p {
 }
 
 @media (max-width: 575px){
-	.col{
-		margin-bottom:20px;
-	}
+    .home-nav {
+        padding: 0px 15px 0px 15px !important;
+    }
+
 	.proj-link{
 		;
 	}

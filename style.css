@@ -226,7 +226,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	margin: 0 auto;
 }
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
-	color: rgb(64, 64, 64);
+	color: #000000;
 }
 .btco-menu li > a {
 	padding: 10px 15px;

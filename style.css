@@ -11,6 +11,7 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.page-container{overflow-x:hidden;} /* Prevents unwanted scroll space when scroll FX used. */
 a,button{transition: background .3s ease-in-out;outline: none!important;} /* Prevent ugly blue glow on chrome and safari */
 a:hover{text-decoration: none; cursor:pointer;}
 
@@ -895,6 +896,15 @@ p {
 	font-family:"Red Hat Display";
 	font-weight:500:400,400i,500,500i,700,700i&display=swap&subset=latin-ext;
 }
+.h2-48-style{
+	font-size:72px;
+}
+.h2-49-style{
+	font-size:72px;
+}
+.h2-50-style{
+	font-size:72px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -935,6 +945,14 @@ p {
 .btn-medium-sea-green:hover{
     background:#3d8c40!important;
     color:#FFFFFF!important;
+}
+.btn-dodger-blue{
+	background:#26A1F9;
+	color:#FFFFFF!important;
+}
+.btn-dodger-blue:hover{
+	background:#1e81c7!important;
+	color:#FFFFFF!important;
 }
 .btn-carmine-pink{
     background:#E64C3C;

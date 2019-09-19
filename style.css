@@ -454,10 +454,15 @@ a[data-lightbox]:hover img{
 	opacity: 0.3;
 	border-radius:.25rem;
 }
-.close-lightbox:hover,.next-lightbox:hover, .prev-lightbox:hover{
+.close-lightbox:hover{
 	opacity: 1.0;
 	color:#FFF;
 }
+
+.next-lightbox:hover, .prev-lightbox:hover{
+    color: black;
+}
+
 .next-lightbox, .prev-lightbox{
 	font-size:20px;
 	color:black;

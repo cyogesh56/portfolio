@@ -1,120 +1,184 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Password Protected Page</title>
-    <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #dialogText {
-            padding: 10px 30px;
-            color: white;
-            background-color: #333333;
-        }
-        
-        #dialogWrap {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: table;
-            background-color: #EEEEEE;
-        }
-        
-        #dialogWrapCell {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-        }
-        
-        #mainDialog {
-            max-width: 400px;
-            margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            text-align: left;
-        }
-        #passArea {
-            padding: 20px 30px;
-            background-color: white;
-        }
-        #passArea > * {
-            margin: 5px auto;
-        }
-        #pass {
-            width: 100%;
-            height: 40px;
-            font-size: 30px;
-        }
-        
-        #messageWrapper {
-            float: left;
-            vertical-align: middle;
-            line-height: 30px;
-        }
-        
-        .notifyText {
-            display: none;
-        }
-        
-        #invalidPass {
-            color: red;
-        }
-        
-        #success {
-            color: green;
-        }
-        
-        #submitPass {
-            font-size: 20px;
-            border-radius: 5px;
-            background-color: #E7E7E7;
-            border: solid gray 1px;
-            float: right;
-        }
-        #contentFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-  </head>
-  <body>
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
-    <div id="dialogWrap">
-        <div id="dialogWrapCell">
-            <div id="mainDialog">
-                <div id="dialogText">This page is password protected.</div>
-                <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass">
-                    <div>
-                        <span id="messageWrapper">
-                            <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
-                            <span id="success" class="notifyText">Success!</span>
-                            &nbsp;
-                        </span>
-                        <button id="submitPass" type="button">Submit</button>
-                        <div style="clear: both;"></div>
-                    </div>
+    <head>
+        <meta charset="utf-8">
+            <meta name="keywords" content="continental, tune-e, tunee, tune e, continental tune-e, continental tunee, continental tune e, yogesh singh, cyogesh56, cy56, 325vvi, yogesh, singh, cyogesh, ux, uxd, ux design, user experience, user experience design, ux projects">
+                <meta name="description" content="Continental Tune-E User Experience Design project by Yogesh Singh. Tune-E is an industry-leading, innovative and most complete car audtio tuning tool on the market.">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+                        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+                            <title>Continental Tune-E UX Design project by Yogesh Singh</title>
+                            <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?529">
+                                <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700|Red+Hat+Text:400,500&display=swap&subset=latin-ext" rel="stylesheet">
+                                    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+                                        <link rel="stylesheet" type="text/css" href="../css/feather.min.css">
+                                            <link rel="stylesheet" type="text/css" href="../style.css?9486">
+                                                
+                                                <!--Analytics-->
+                                                <meta name="google-site-verification" content="tHnA11ithqOvQ7PFdO25cTns8MPTFb5vC3i5GIyT6ik" />
+                                                <link rel="canonical" href="https://cy56.workcontinental-tune-e/"/>
+                                                <meta property="og:site_name" content="Continental Tune-E UX Design project by Yogesh Singh"/>
+                                                <meta property="og:title" content="Tune-E is Continental's industry leading audio tuning tool. Yogesh Singh was lead designer on Tune-E project with Continental"/>
+                                                <meta property="og:url" content="https://cy56.work/continental-tune-e/"/>
+                                                <meta property="og:type" content="website"/>
+                                                <meta itemprop="name" content="Continental Tune-E UX Design project by Yogesh Singh"/>
+                                                <meta itemprop="url" content="https://cy56.work/continental-tune-e/"/>
+                                                <meta name="twitter:title" content="Continental Tune-E UX Design project by Yogesh Singh"/>
+                                                <meta name="twitter:url" content="https://cy56.work/continental-tune-e/"/>
+                                                <meta name="twitter:card" content="summary"/>
+                                                <!--Analytics End-->
+                                                
+                                                
+                                                <style>
+                                                    html, body {
+                                                        margin: 0;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        font-family: "Red Hat Text";
+                                                    }
+                                                #dialogText {
+                                                    padding: 10px 30px;
+                                                    color: black;
+                                                    background-color: #ffebee;
+                                                    background-color: #ffebee;
+                                                    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ef5350' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+                                                }
+                                                
+                                                #dialogWrap {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    display: table;
+                                                    background: url("../img/bg2.png") no-repeat center center;
+                                                }
+                                                
+                                                #dialogWrapCell {
+                                                    display: table-cell;
+                                                    text-align: center;
+                                                    vertical-align: middle;
+                                                }
+                                                
+                                                #mainDialog {
+                                                    max-width: 400px;
+                                                    margin: 5px;
+                                                    border-radius: 10px;
+                                                    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+                                                    margin-left: auto;
+                                                    margin-right: auto;
+                                                    background-color: #FFFFFF;
+                                                    overflow: hidden;
+                                                    text-align: left;
+                                                }
+                                                
+                                                #goHome {
+                                                    background-color:#ffffff;
+                                                    text-decoration:none;
+                                                }
+                                                
+                                                #goHome:hover {
+                                                    background-color:#ffffff;
+                                                    color:000000;
+                                                    text-decoration:none;
+                                                }
+                                                
+                                                #goHome:active {
+                                                    background-color:#ffffff;
+                                                    color:000000;
+                                                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                                                }
+                                                
+                                                #hrLine {
+                                                    border:1px solid #000000;
+                                                }
+                                                
+                                                #passArea {
+                                                    padding: 20px 30px;
+                                                    background-color: white;
+                                                }
+                                                #passArea > * {
+                                                    margin: 5px auto;
+                                                }
+                                                #pass {
+                                                    width: 100%;
+                                                    height: 40px;
+                                                    font-size: 20px;
+                                                }
+                                                
+                                                #messageWrapper {
+                                                    float: left;
+                                                    vertical-align: middle;
+                                                    line-height: 30px;
+                                                }
+                                                
+                                                .notifyText {
+                                                    display: none;
+                                                }
+                                                
+                                                #invalidPass {
+                                                    color: red;
+                                                }
+                                                
+                                                #success {
+                                                    color: green;
+                                                }
+                                                
+                                                #submitPass {
+                                                    color: #ffffff !important;
+                                                    font-size: 20px;
+                                                    border-radius: 5px;
+                                                    background-color: #4caf50;
+                                                    border: solid gray 1px;
+                                                    float: right;
+                                                }
+                                                #submitPass {
+                                                    border:1px solid rgba(0,0,0,.08);
+                                                    border-bottom-color:rgba(0,0,0,.1);
+                                                    text-shadow:0 1px 0 rgba(0,0,1,.1);
+                                                    box-shadow: 0 1px 3px rgba(0,0,1,.25), inset 0 1px 0 0 rgba(255,255,255,.15);
+                                                }
+                                                #submitPass:hover {
+                                                    background-color: #3d8c40;
+                                                }
+                                                #submitPass:active {
+                                                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                                                }
+                                                #contentFrame {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                                </style>
+                                                </head>
+    <body>
+        <iframe id="contentFrame" frameBorder="0"></iframe>
+        <div id="dialogWrap">
+            <div id="dialogWrapCell">
+                <div id="mainDialog">
+                    <div id="dialogText"><h2>This page is password protected.</h2></div>
+                    <div id="passArea">
+                        <button id="goHome" class="btn btn-outline-dark btn-block" onclick="location.href = '../index.html';"><span class="feather-icon icon-arrow-left icon-spacer icon-sm"></span>Go back to Home page</button>
+                        &nbsp;
+                        <p>Please contact <a href="mailto://cyogesh56@gmail.com" class="a-btn ltc-cerulean-blue proj-link" target="_blank" data-placement="top" data-toggle="tooltip" title="This link will goto an external website.">cyogesh56@gmail.com</a> to request for password if you don't have one.</p>
+                        <hr id="hrLine">
+                        <br>
+                        <p id="passwordPrompt">Password</p>
+                        <input id="pass" type="password" name="pass" class="form-control" placeholder="Enter Password">
+                            <div>
+                                <span id="messageWrapper">
+                                    <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
+                                    <span id="success" class="notifyText">Success!</span>
+                                    &nbsp;
+                                </span>
+                                <button id="submitPass" class="btn btn-success btn-block" type="button">Submit</button>
+                                <div style="clear: both;"></div>
+                            </div>
+                            </div>
                 </div>
             </div>
         </div>
-    </div>
     <script>
 /*
 CryptoJS v3.1.2

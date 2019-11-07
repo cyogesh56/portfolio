@@ -241,7 +241,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 .dropdown-menu .show > .dropdown-toggle::after{
 	transform: rotate(-90deg);
 }
-
+.navbar {
+	background: #ffffff;
+}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 

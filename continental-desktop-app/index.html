@@ -1,455 +1,1389 @@
-<!doctype html><html><head>
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <meta name="keywords" content="yogesh singh, yogesh choudhary, yogesh singh choudhary, cy56, cyogesh56, 325vvi, yogesh singh cy, yogesh singh cy56, yogesh singh cyogesh56, yogesh cy, yogesh cyogesh56, cy56 portfolio, cy portfolio, cyogesh56 portfolio, continental, continental tune-e, tune-e,">
-    <meta name="description" content="How Might We make a very technical audio tuning application less cluttered, more efficient, and easier to learn?">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="../favicon.png">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?4515">
-    <link rel="stylesheet" type="text/css" href="../style.css?5801">
-    <link rel="stylesheet" type="text/css" href="../css/animate.min.css?6037">
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/feather.min.css">
-    <link href="https://unpkg.com/applause-button/dist/applause-button.css" rel="stylesheet" type="text/css">
-    <title>Continental Desktop App</title>
-    <!-- Analytics -->
-<meta name="google-site-verification" content="tHnA11ithqOvQ7PFdO25cTns8MPTFb5vC3i5GIyT6ik" />
-<link rel="canonical" href="https://cy56.work/continental-desktop-app/"/>
-<meta property="og:site_name" content="Continental Desktop App"/>
-<meta property="og:title" content="How Might We make a very technical audio tuning application less cluttered, more efficient, and easier to learn?"/>
-<meta property="og:url" content="https://cy56.work/continental-desktop-app/"/>
-<meta property="og:type" content="website"/>
-<meta itemprop="name" content="Continental Desktop App"/>
-<meta itemprop="url" content="https://cy56.work/continental-desktop-app/"/>
-<meta name="twitter:title" content="Continental Desktop App"/>
-<meta name="twitter:url" content="https://cy56.work/continental-desktop-app/"/>
-<meta name="twitter:card" content="summary"/>
-    <!-- Analytics END -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Password Protected Page</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: #15151C;
+            font-family: "Plex Sans VF", "Arial";
+        }
+
+        #dialogText {
+            padding: 10px 30px;
+            color: black;
+            background-color: #ffebee;
+            background-color: #ffebee;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ef5350' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        #dialogWrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+        }
+
+        #dialogWrapCell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #mainDialog {
+            max-width: 400px;
+            margin: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        #goHome {
+            display: inline-block;
+            font-weight: 400;
+            color: #DFE6ED;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: #15151C;
+            border: none !important;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            transform: scale(1);
+            /* you need a scale here to allow it to transition in both directions */
+            transition: 0.4s all ease-in-out;
+        }
+
+        #goHome:hover {
+            transform: scale(1);
+            /* you need a scale here to allow it to transition in both directions */
+            transition: 0.4s all ease-in-out;
+            font-weight: bold !important;
+            outline: none;
+            border: none !important;
+            background-color: #1A1A1A;
+            color: #DFE6ED;
+            text-decoration: none;
+        }
+
+        #goHome:active {
+            border: none !important;
+            outline: 1px dashed #0A32F7;
+            background-color: #DFE6ED;
+            color: #DFE6ED;
+        }
+
+        #goHome:focus {
+            border: none !important;
+            outline: 1px dashed #0A32F7;
+            background-color: #1A1A1A;
+            color: #DFE6ED;
+        }
+
+        #hrLine {
+            border: 1px solid #000000;
+        }
+
+        #passArea {
+            padding: 20px 30px;
+            background-color: #FAFAFA;
+        }
+
+        #passArea>* {
+            margin: 5px auto;
+        }
+
+        #pass {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        #pass:focus {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            border: 1px solid #OA32F7 !important;
+            outline: 1px solid #OA32F7 !important;
+        }
+        
+        #messageWrapper {
+            float: left;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+
+        .notifyText {
+            display: none;
+        }
+
+        #invalidPass {
+            color: red;
+        }
+
+        #success {
+            color: green;
+        }
+
+        #submitPass {
+            float: right !important;
+            display: inline-block;
+            font-weight: 400;
+            color: #DFE6ED;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: #0958F7;
+            border: none !important;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+
+            transform: scale(1);
+            /* you need a scale here to allow it to transition in both directions */
+            transition: 0.4s all ease-in-out;
+        }
+
+        #submitPass:hover {
+            outline: none;
+            font-weight: bold !important;
+            color: #DFE6ED !important;
+            background-color: #0A32F7;
+            text-decoration: none;
+            border: none !important;
+            transform: scale(1);
+            /* you need a scale here to allow it to transition in both directions */
+            transition: 0.4s all ease-in-out;
+        }
+
+        #submitPass:active {
+            outline: 1px dashed #1A1A1A;
+            border: none !important;
+            background-color: #0A32F7;
+            color: #DFE6ED;
+        }
+
+        .submitPass:focus {
+            outline: 1px dashed #1A1A1A;
+            border: none !important;
+            background-color: #0A32F7;
+            color: #DFE6ED;
+        }
+
+        #contentFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
-<body data-clean-url="true">
-    <!-- Main container -->
-    <div class="page-container">
-        <!-- bloc-21 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-21">
-            <div class="container ">
-                <div class="row">
-                    <div class="col">
-                        <div>
-                            <div class="page-scroll-progress-bar  hide-in-blocs-page-preview-snapshot" style="height:4px;background:#FFFFFF;"></div>
-                        </div>
+<body>
+    <script src="./js/jquery-3.3.1.min.js?4011"></script>
+    <script src="./js/bootstrap.bundle.min.js?5393"></script>
+    <script src="./js/blocs.min.js?3074"></script>
+    <script src="./js/lazysizes.min.js" defer></script>
+    <script src="./js/random-text.js?2"></script>
+    <script src="./js/jquery.transit.min.js?2975"></script>
+    <script src="./js/anim-shape-bg.js?7856"></script>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <div id="dialogWrap">
+        <div id="dialogWrapCell">
+            <div id="mainDialog">
+                <div id="dialogText">
+                    <h2>This page is password protected.</h2>
+                </div>
+                <div id="passArea">
+                    <button id="goHome" class="btn btn-d btn-sq btn-lg" style="margin-bottom: 20px;" onclick="location.href = '../index.html';"><span class="feather-icon icon-arrow-left icon-spacer icon-sm"></span>Go back to Home page</button>
+                    &nbsp;
+                    <p>Please contact <a href="mailto://cyogesh56@gmail.com" class="a-btn ltc-cerulean-blue proj-link" target="_blank" data-placement="top" data-toggle="tooltip" title="This link will goto an external website.">cyogesh56@gmail.com</a> to request for password if you don't have one.</p>
+                    <hr id="hrLine">
+                    <br>
+                    <p id="passwordPrompt">Password</p>
+                    <input id="pass" type="password" name="pass" class="form-control" placeholder="Enter Password">
+                    <div>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
+                            <span id="success" class="notifyText">Success!</span>
+                            &nbsp;
+                        </span>
+                        <button id="submitPass" class="btn btn-success btn-block" type="button">Submit</button>
+                        <div style="clear: both;"></div>
                     </div>
                 </div>
             </div>
-        </div><!-- bloc-21 END -->
-        <!-- bloc-22 -->
-        <div class="bloc bloc-fill-screen full-width-bloc bloc-bg-texture texture-darken-strong bg-Continental-logo-big l-bloc" id="bloc-22">
-            <div class="container fill-bloc-top-edge sticky-nav">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar row navbar-expand-md navbar-dark" role="navigation"><a class="navbar-brand" href="../index.html"><img src="../img/lazyload-ph.png" data-src="../img/LogoPNG4-1.png" alt="logo" class="lazyload" /></a><button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 mr-md-0 ml-auto" data-toggle="collapse" data-target=".navbar-39863" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse navbar-47101 navbar-39863">
-                                <ul class="site-navigation nav navbar-nav ml-auto">
-                                    <li class="nav-item"><a href="../index.html" class="nav-link">Portfolio</a></li>
-                                    <li class="nav-item"><a href="../about/index.html" class="nav-link a-btn">About</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <h1 class="mg-md h1-style text-lg-left text-md-left text-sm-left text-left">Continental Desktop App</h1>
-                        <p class="mg-md float-none p-style text-lg-left text-md-left text-sm-left text-left">How Might We make a very technical audio tuning application less cluttered, more efficient, and easier to learn?</p><div class="d-inline-flex tag-button float-lg-none">Desktop App</div><div class="d-inline-flex tag-button float-lg-none">Automotive</div><div class="d-inline-flex tag-button float-lg-none">Audio</div><div class="d-inline-flex tag-button float-lg-none">Audio Tuning</div><div class="d-inline-flex tag-button float-lg-none">UI Design</div><div class="d-inline-flex tag-button float-lg-none">UX Design</div><div class="d-inline-flex tag-button float-lg-none">Design System</div><div class="d-inline-flex tag-button float-lg-none">Team Project</div>
-                    </div>
-                </div>
-            </div>
-            <div class="container fill-bloc-bottom-edge">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="text-center"><a href="#" data-scroll-speed="1000" onclick="scrollToTarget('0',this)"><span class="fa fa-angle-down icon-md animated bounce animDelay08 icon-platinum"></span></a></div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-22 END -->
-        <!-- bloc-23 -->
-        <div class="bloc bgc-blue-ryb full-width-bloc d-bloc" id="bloc-23">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-10">
-                        <h2 class="mg-md">Acknowledgement</h2>
-                        <p class="p-style">This project is protected by Non-disclosure agreement and all the images used in this project may not represent the actual images from the project. I have used slightly modified or skinned images.</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-23 END -->
-        <!-- bloc-24 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-24">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
-                        <h2 class="mg-md">Problem</h2>
-                        <p class="project-paragraph mg-lg">The legacy tool used by Continental&rsquo;s audio engineers lacked usability and was inefficient. They were always running into errors, and the lack of new features make them use 3rd-party tools. The inefficiencies in the current tool and the requirement of new features formed the need to develop an enhanced version of their audio tool desktop application.</p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <h2 class="mg-md">Solution</h2>
-                        <p class="project-paragraph mg-lg">We followed the usability principles and laws to create a future-proof and scalable design language, usability guidelines for both design and development. Then we created the UI and UX for the tool. We also conducted usability tests to measure the design against the KPIs.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                        <h2 class="mg-md">Result</h2>
-                        <p class="project-paragraph mg-lg">We created an MVP, which we handed over to the Continental&rsquo;s developers for production. With the redesigned tool, we were able to improve the efficiency of the tool marginally and nearly eliminate all the errors. The improved aesthetic appeal also means that this tool can now be marketed to its business partners and customers, as well.</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-24 END -->
-        <!-- bloc-25 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-25">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="col-md-6 col-lg-5 offset-lg-1">
-                        <h2 class="mg-md">About the Company</h2>
-                        <p>Continental is a German automotive manufacturing company and is the 4th largest tire manufacturer in the world, but they do not just make tires. Continental also specializes in brake systems, interior electronics, automotive safety, powertrain and chassis components, tachographs and other internal automotive parts. Continental is a Fortune Global 500 company.</p>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <h2 class="mg-md">My Role</h2><div class="d-inline-flex tag-button btn-rd">Icon Design</div><div class="d-inline-flex tag-button btn-rd">Interface Design</div><div class="d-inline-flex tag-button btn-rd">Interaction Design</div><div class="d-inline-flex tag-button btn-rd">Wireframing</div><div class="d-inline-flex tag-button btn-rd">Prototyping</div><div class="d-inline-flex tag-button btn-rd">Design System</div><div class="d-inline-flex tag-button btn-rd">Usability Guidelines</div><div class="d-inline-flex tag-button btn-rd">Usability Testing</div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-25 END -->
-        <!-- bloc-26 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-26">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="col-md-6 col-lg-5 offset-lg-1">
-                        <h2 class="mg-md">About the Project</h2>
-                        <p>Continental approached DePaul Innovation Development Laboratory (DePaul iD Lab) to redesign their audio tuning tool with overhauled UI, UX, and additional features. The project was a collaboration between DePaul iD Lab cross-functional team and Continental front and back-end engineers and stakeholders.</p>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <h2 class="mg-md">Target Audience</h2>
-                        <p>This tool caters to Continental&rsquo;s internal use by their engineers, undisclosed clients, and individual customers.</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-26 END -->
-        <!-- bloc-27 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-27">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-10">
-                        <h2 class="mg-md">Process</h2><img src="../img/lazyload-ph.png" data-src="../img/Conti_Process.png" class="img-fluid mx-auto d-block lazyload" alt="Image showing the process we followed for this project." />
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-27 END -->
-        <!-- bloc-28 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-28">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-sm-12 col-lg-4 col-md-12">
-                        <h3 class="mg-md">Learning the Context of use from the Engineers</h3>
-                        <p>We read the published documentation on audio tuning, digital signal processing, and data processing to understand the functionality of the tool. Then we invited audio engineers to demonstrate to us how they are using the current tool in their context and work environment. We discovered that:</p>
-                        <ol class="list-style">
-                            <li>
-                                <p>This tool has a very complex architecture due to the functionality it provides. There will be a point where a reduction in complexity will not be possible.</p>
-                            </li>
-                            <li>
-                                <p>Users might use it under direct sunlight, which would cause screen glare and would reduce the visibility of the on-screen content.</p>
-                            </li>
-                            <li>
-                                <p>This tool can also be used during the night while driving the car and under very variable work conditions.<br></p>
-                            </li>
-                            <li>
-                                <p>The current tool does not ask for confirmation from the user for any action, potentially leading to catastrophic results if the user performs the wrong move.</p>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 col-md-12"><img src="../img/lazyload-ph.png" data-src="../img/CoverImg.png" class="img-fluid mx-auto d-block lazyload" alt="A mockup image of a laptop in the car with Tune-E running (app blurred)." /></div>
-                </div>
-            </div>
-        </div><!-- bloc-28 END -->
-        <!-- bloc-29 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-29">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-8">
-                        <h3 class="mg-md">Following the User-Centered Design Process</h3>
-                        <p>I focused on to follow the UX principles to create a refined design. The design team followed 7 UX principles:</p>
-                        <ul class="list-style">
-                            <li>
-                                <p><strong>Consistency:</strong> Create a unified and cohesive experience throughout the tool so that if the user uses moves between features of the tool, it looks and behaves the same way.</p>
-                            </li>
-                            <li>
-                                <p><strong>Usefulness:</strong> Make the tool more usable by providing the context-aware content to the user and hide all the non-important and non-relevant things from the screen so that the user can focus on the task at hand.</p>
-                            </li>
-                            <li>
-                                <p><strong>Communication:</strong> Provide easy to find and easy to understand visual cues to the user and provide appropriate, transparent, and timely feedback to the user so that the user stays informed of what is happening of his actions on the screen.</p>
-                            </li>
-                            <li>
-                                <p><strong>Simplicity:</strong> Reduce clutter and remove all the unnecessary items from the screen so that it decreases the cognitive load and increases the focus of the user on the task at hand.</p>
-                            </li>
-                            <li>
-                                <p><strong>Error Prevention and Handling:</strong> Ask for confirmation before allowing any potentially destructive actions of the user to help prevent any catastrophic consequences in critical situations.</p>
-                            </li>
-                            <li>
-                                <p><strong>Efficiency:</strong> Accommodate both new and experienced users to help them reach the same level of efficiency and expertise level by easing the tasks in the tool.</p>
-                            </li>
-                            <li>
-                                <p><strong>Work Load Reduction:</strong> Use all the above design principles to make user&rsquo;s work more comfortable, simpler, faster, and efficient.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-29 END -->
-        <!-- bloc-30 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-30">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-3 col-md-5 col-sm-12">
-                        <h3 class="mg-md">Conceptualizing using Sketches</h3>
-                        <p>The challenge was to create a design that can be learned by new users who have no idea what this tool is and how can they use it; and their engineers who exactly know where everything is located in the tool. My idea was to use a conversational wizard-style interface that users and engineers can talk to and get their work done. However, it was not what the client was looking for. They were looking for a design that looks and behaves exactly the same for both new users and their engineers. The reason being, to make new users efficient in using the real interface rather than talking to a robot and achieving nothing. So I went back to the drawing board and created a lot more designs.</p>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-12"><a href="#" data-lightbox="../img/20190728_020535.jpg" data-gallery-id="gallery-1" data-frame="fullscreen-lb"><img src="../img/lazyload-ph.png" data-src="../img/20190728_020535.jpg" class="img-fluid mx-auto d-block lazyload" alt="A screenshot of initial sketches I made of Tune-E interface." /></a></div>
-                </div>
-            </div>
-        </div><!-- bloc-30 END -->
-        <!-- bloc-31 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-31">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-8">
-                        <h3 class="mg-md">Redefining the User Experience</h3>
-                        <p>Not just the UX but also the UI and taxonomies were also simplified for the user to understand and get going with the tool smoothly. Some of the changes we did:</p>
-                        <ol class="list-style">
-                            <li>
-                                <p><strong>Visual enhancement:</strong> Enhanced the interface design to make it more visually appealing.</p>
-                            </li>
-                            <li>
-                                <p><strong>Color Contrast enhancement:</strong> I tested a few variations of the primary color schemes to improve the color contrast throughout the tool to enhance the visibility of UI elements in varying lighting environments.</p>
-                            </li>
-                            <li>
-                                <p><strong>Simplifying Iconography:</strong> I redesigned 90% of the icons to better align them with the functionality of the associated feature in the tool. We tested the icons during the usability test to find out how the engineers interpret them.</p>
-                            </li>
-                            <li>
-                                <p><strong>Reducing space wastage:</strong> With improved visual design and confident iconography, I was able to reduce the amount of space used by each UI element on the screen, still keeping the font size and icon size precisely the same as before.</p>
-                            </li>
-                            <li>
-                                <p><strong>Reclaiming space:</strong>&nbsp;More screen space was reclaimed by removing the text labels and putting them as either tooltips or expandable sidebar. The usability test indicated that all the engineers were able to quickly understand the meanings of icons correctly without any given context.</p>
-                            </li>
-                            <li>
-                                <p><strong>UX Copyrighting:</strong> UX Copy was an essential part of the entire redesign. Text everywhere was rewritten, wherever required, to make it easier for the user to understand what is going on, what they have to do, and what will be the potential outcome of their actions.</p>
-                            </li>
-                        </ol>
-                        <p>We initially tested out all the abovementioned changes in few of the screens to test the effect of the change on engineers and after finding out that the changes are helping them improve the way they interact with the tool, we updated rest of the screens and used that design to create new screen and features for the tool.</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-31 END -->
-        <!-- bloc-32 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-32">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-8">
-                        <h3 class="mg-md">How might we have the tool look the same in both design and development?</h3>
-                        <h3 class="mg-md">How might we make it easier for future developers to have the same design as us?</h3>
-                        <p class="mg-lg">We initially started without a design system, but soon we realized that neither the designs are not matching exactly, nor the development looks the same as design. So, we decided to co-create a mutual design system among design and development with shared specifications.</p>
-                    </div>
-                    <div class="col-lg-12"><a href="#" data-lightbox="../img/Scalable_Design_System.png" data-gallery-id="gallery-1" data-frame="fullscreen-lb"><img src="../img/lazyload-ph.png" data-src="../img/Scalable_Design_System.png" class="img-fluid mx-auto d-block lazyload" alt="A screenshot showing the scalable design system based on the Atom Design technique." /></a></div>
-                </div>
-            </div>
-        </div><!-- bloc-32 END -->
-        <!-- bloc-33 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-33">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-3 col-md-5 col-sm-12">
-                        <h3 class="mg-md">How might we make the tool speak the language of the user?</h3>
-                        <p>Since the target users for this tool are primarily the engineers from Continental, the tool has to speak and work in their language, plus it has to be easy for new users to get on board and start learning. For the product to speak the user&rsquo;s language, it has to be programmed to work that way, and it is a UXer&rsquo;s job to provide the specifications to the developers on how it can work in a user-friendly way.</p>
-                    </div>
-                    <div class="col-md-7 col-sm-12 col-lg-8"><a href="#" data-lightbox="../img/TuningAsst.jpg" data-gallery-id="gallery-1" data-frame="fullscreen-lb"><img src="../img/lazyload-ph.png" data-src="../img/TuningAsst.jpg" class="img-fluid mx-auto d-block lazyload" alt="An annotated mockup showing how we made the tool speak the user's language." /></a></div>
-                </div>
-            </div>
-        </div><!-- bloc-33 END -->
-        <!-- bloc-34 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-34">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="col-md-6 col-lg-5 offset-lg-1 col-sm-6">
-                        <h3 class="mg-md">Test, Validate and Fix</h3>
-                        <ul class="list-style">
-                            <li>
-                                <p>4 Usability Tests (Formative to Summative)</p>
-                            </li>
-                            <li>
-                                <p>5 Users (Continental&rsquo;s Audio Engineers)</p>
-                            </li>
-                            <li>
-                                <p>1 hr. duration each</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <h3 class="mg-md">Testing Metrics</h3>
-                        <ul class="list-style">
-                            <li>
-                                <p>Ease of Use</p>
-                            </li>
-                            <li>
-                                <p>Efficiency</p>
-                            </li>
-                            <li>
-                                <p>Error Rate</p>
-                            </li>
-                            <li>
-                                <p>Findability</p>
-                            </li>
-                            <li>
-                                <p>Learnability</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-34 END -->
-        <!-- bloc-35 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-35">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-8">
-                        <h2 class="mg-md">Final Product</h2>
-                        <p>The final product is a Windows application that is currently being developed by Continental&rsquo;s front-end and back-end developers. The design guidelines we created will be used by their team to design new features for future releases. One of the biggest challenges of this project was to use the legacy technology to create modern visual elements with it, to make the product both backward and forward compatible, i.e., this tool is developed using C# Winforms with every element custom made to cater users of both Windows 7 and Windows 10 without any aesthetical changes.</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-35 END -->
-        <!-- bloc-36 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-36">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-8">
-                        <h2 class="mg-md">Achievements</h2>
-                        <p>We achieved a high level of UX standards on this project by following the user-centered design process and UX principles. With the accomplishment of this project, we achieved the following things:</p>
-                        <ul class="list-style">
-                            <li>
-                                <p>Improve the aesthetic appeal of the tool to cater to it better toward Continental&rsquo;s business partners and customers.</p>
-                            </li>
-                            <li>
-                                <p>Handed-over a complete and future-proof front-end and design system for their developers.</p>
-                            </li>
-                            <li>
-                                <p>Made the tool easy to use, easy to learn, and faster to complete tasks based on our usability test results.</p>
-                            </li>
-                            <li>
-                                <p>Improve the efficiency of the engineers by 2x, thereby also increasing the efficiency of the tool.</p>
-                            </li>
-                            <li>
-                                <p>Reduce the error rate in the tool by more than 50% by following the UX principles and our creative problem-solving ability.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-36 END -->
-        <!-- bloc-37 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-37">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-8">
-                        <h2 class="mg-md">Learnings</h2>
-                        <ul class="list-style">
-                            <li>
-                                <p><strong>Co-creation</strong> is the key to streamline the workflow for both designers and developers in terms of how much time they spend creating components.</p>
-                            </li>
-                            <li>
-                                <p><strong>Testing early and testing dirty</strong> is the way forward to steering the project in the right direction.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-37 END -->
-        
-        <applause-button class="fixed-bottom" multiclap="true" color="#DFE6ED" style="width: 58px; height: 58px; display: block; bottom: 20px; left: 20px;"> </applause-button>
+        </div>
+    </div>
+    <script>
+        /*
+CryptoJS v3.1.2
+code.google.com/p/crypto-js
+(c) 2009-2013 by Jeff Mott. All rights reserved.
+code.google.com/p/crypto-js/wiki/License
+*/
+        var CryptoJS = CryptoJS || function(u, p) {
+            var d = {},
+                l = d.lib = {},
+                s = function() {},
+                t = l.Base = {
+                    extend: function(a) {
+                        s.prototype = this;
+                        var c = new s;
+                        a && c.mixIn(a);
+                        c.hasOwnProperty("init") || (c.init = function() {
+                            c.$super.init.apply(this, arguments)
+                        });
+                        c.init.prototype = c;
+                        c.$super = this;
+                        return c
+                    },
+                    create: function() {
+                        var a = this.extend();
+                        a.init.apply(a, arguments);
+                        return a
+                    },
+                    init: function() {},
+                    mixIn: function(a) {
+                        for (var c in a) a.hasOwnProperty(c) && (this[c] = a[c]);
+                        a.hasOwnProperty("toString") && (this.toString = a.toString)
+                    },
+                    clone: function() {
+                        return this.init.prototype.extend(this)
+                    }
+                },
+                r = l.WordArray = t.extend({
+                    init: function(a, c) {
+                        a = this.words = a || [];
+                        this.sigBytes = c != p ? c : 4 * a.length
+                    },
+                    toString: function(a) {
+                        return (a || v).stringify(this)
+                    },
+                    concat: function(a) {
+                        var c = this.words,
+                            e = a.words,
+                            j = this.sigBytes;
+                        a = a.sigBytes;
+                        this.clamp();
+                        if (j % 4)
+                            for (var k = 0; k < a; k++) c[j + k >>> 2] |= (e[k >>> 2] >>> 24 - 8 * (k % 4) & 255) << 24 - 8 * ((j + k) % 4);
+                        else if (65535 < e.length)
+                            for (k = 0; k < a; k += 4) c[j + k >>> 2] = e[k >>> 2];
+                        else c.push.apply(c, e);
+                        this.sigBytes += a;
+                        return this
+                    },
+                    clamp: function() {
+                        var a = this.words,
+                            c = this.sigBytes;
+                        a[c >>> 2] &= 4294967295 <<
+                            32 - 8 * (c % 4);
+                        a.length = u.ceil(c / 4)
+                    },
+                    clone: function() {
+                        var a = t.clone.call(this);
+                        a.words = this.words.slice(0);
+                        return a
+                    },
+                    random: function(a) {
+                        for (var c = [], e = 0; e < a; e += 4) c.push(4294967296 * u.random() | 0);
+                        return new r.init(c, a)
+                    }
+                }),
+                w = d.enc = {},
+                v = w.Hex = {
+                    stringify: function(a) {
+                        var c = a.words;
+                        a = a.sigBytes;
+                        for (var e = [], j = 0; j < a; j++) {
+                            var k = c[j >>> 2] >>> 24 - 8 * (j % 4) & 255;
+                            e.push((k >>> 4).toString(16));
+                            e.push((k & 15).toString(16))
+                        }
+                        return e.join("")
+                    },
+                    parse: function(a) {
+                        for (var c = a.length, e = [], j = 0; j < c; j += 2) e[j >>> 3] |= parseInt(a.substr(j,
+                            2), 16) << 24 - 4 * (j % 8);
+                        return new r.init(e, c / 2)
+                    }
+                },
+                b = w.Latin1 = {
+                    stringify: function(a) {
+                        var c = a.words;
+                        a = a.sigBytes;
+                        for (var e = [], j = 0; j < a; j++) e.push(String.fromCharCode(c[j >>> 2] >>> 24 - 8 * (j % 4) & 255));
+                        return e.join("")
+                    },
+                    parse: function(a) {
+                        for (var c = a.length, e = [], j = 0; j < c; j++) e[j >>> 2] |= (a.charCodeAt(j) & 255) << 24 - 8 * (j % 4);
+                        return new r.init(e, c)
+                    }
+                },
+                x = w.Utf8 = {
+                    stringify: function(a) {
+                        try {
+                            return decodeURIComponent(escape(b.stringify(a)))
+                        } catch (c) {
+                            throw Error("Malformed UTF-8 data");
+                        }
+                    },
+                    parse: function(a) {
+                        return b.parse(unescape(encodeURIComponent(a)))
+                    }
+                },
+                q = l.BufferedBlockAlgorithm = t.extend({
+                    reset: function() {
+                        this._data = new r.init;
+                        this._nDataBytes = 0
+                    },
+                    _append: function(a) {
+                        "string" == typeof a && (a = x.parse(a));
+                        this._data.concat(a);
+                        this._nDataBytes += a.sigBytes
+                    },
+                    _process: function(a) {
+                        var c = this._data,
+                            e = c.words,
+                            j = c.sigBytes,
+                            k = this.blockSize,
+                            b = j / (4 * k),
+                            b = a ? u.ceil(b) : u.max((b | 0) - this._minBufferSize, 0);
+                        a = b * k;
+                        j = u.min(4 * a, j);
+                        if (a) {
+                            for (var q = 0; q < a; q += k) this._doProcessBlock(e, q);
+                            q = e.splice(0, a);
+                            c.sigBytes -= j
+                        }
+                        return new r.init(q, j)
+                    },
+                    clone: function() {
+                        var a = t.clone.call(this);
+                        a._data = this._data.clone();
+                        return a
+                    },
+                    _minBufferSize: 0
+                });
+            l.Hasher = q.extend({
+                cfg: t.extend(),
+                init: function(a) {
+                    this.cfg = this.cfg.extend(a);
+                    this.reset()
+                },
+                reset: function() {
+                    q.reset.call(this);
+                    this._doReset()
+                },
+                update: function(a) {
+                    this._append(a);
+                    this._process();
+                    return this
+                },
+                finalize: function(a) {
+                    a && this._append(a);
+                    return this._doFinalize()
+                },
+                blockSize: 16,
+                _createHelper: function(a) {
+                    return function(b, e) {
+                        return (new a.init(e)).finalize(b)
+                    }
+                },
+                _createHmacHelper: function(a) {
+                    return function(b, e) {
+                        return (new n.HMAC.init(a,
+                            e)).finalize(b)
+                    }
+                }
+            });
+            var n = d.algo = {};
+            return d
+        }(Math);
+        (function() {
+            var u = CryptoJS,
+                p = u.lib.WordArray;
+            u.enc.Base64 = {
+                stringify: function(d) {
+                    var l = d.words,
+                        p = d.sigBytes,
+                        t = this._map;
+                    d.clamp();
+                    d = [];
+                    for (var r = 0; r < p; r += 3)
+                        for (var w = (l[r >>> 2] >>> 24 - 8 * (r % 4) & 255) << 16 | (l[r + 1 >>> 2] >>> 24 - 8 * ((r + 1) % 4) & 255) << 8 | l[r + 2 >>> 2] >>> 24 - 8 * ((r + 2) % 4) & 255, v = 0; 4 > v && r + 0.75 * v < p; v++) d.push(t.charAt(w >>> 6 * (3 - v) & 63));
+                    if (l = t.charAt(64))
+                        for (; d.length % 4;) d.push(l);
+                    return d.join("")
+                },
+                parse: function(d) {
+                    var l = d.length,
+                        s = this._map,
+                        t = s.charAt(64);
+                    t && (t = d.indexOf(t), -1 != t && (l = t));
+                    for (var t = [], r = 0, w = 0; w <
+                        l; w++)
+                        if (w % 4) {
+                            var v = s.indexOf(d.charAt(w - 1)) << 2 * (w % 4),
+                                b = s.indexOf(d.charAt(w)) >>> 6 - 2 * (w % 4);
+                            t[r >>> 2] |= (v | b) << 24 - 8 * (r % 4);
+                            r++
+                        } return p.create(t, r)
+                },
+                _map: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
+            }
+        })();
+        (function(u) {
+            function p(b, n, a, c, e, j, k) {
+                b = b + (n & a | ~n & c) + e + k;
+                return (b << j | b >>> 32 - j) + n
+            }
 
-        
-        <!-- bloc-38 -->
-        <div class="bloc l-bloc" id="bloc-38">
-            <div class="container bloc-md">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="mg-md text-center h1-style">Liked what I did? Want to have a chat?</h1>
-                        <p class="float-none text-center mg-lg p-style">Let&rsquo;s catch up for Coffee! Here&rsquo;s my email:&nbsp;<a class="footer-link" aria-label="Yogesh Singh Email Address. Click to copy." data-clipboard-text="cyogesh56@gmail.com">cyogesh56@gmail.com</a></p>
-                    </div>
-                    <div id="snackbar">Email copied to your clipboard.</div>
-                    <div id="snackbar2">Can't copy Email to your clipboard.</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2 offset-md-3 col-sm-4 col-4">
-                        <div class="text-center"><a href="https://linkedin.com/in/cyogesh56" target="_blank"><span class="fa fa-linkedin social-icon icon-md"></span></a>
-                            <p>LinkedIn</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-4">
-                        <div class="text-center"><a href="https://medium.com/@cyogesh56" target="_blank"><span class="fa fa-medium social-icon icon-md"></span></a>
-                            <p>Medium</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-4">
-                        <div class="text-center"><a href="https://eyeem.com/cyogesh56" target="_blank"><span class="fa fa-camera social-icon icon-md"></span></a>
-                            <p>EyeEm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- bloc-38 END -->
-        <!-- bloc-39 -->
-        <div class="bloc full-width-bloc l-bloc" id="bloc-39">
-            <div class="container bloc-lg">
-                <div class="row">
-                    <div class="offset-lg-1 col-lg-10 col-md-12 col-sm-12 col-12">
-                        <h2 class="mg-md">Want to see more projects?</h2>
-                    </div>
-                    <div class="col-md-6 col-lg-5 offset-lg-1 project-card col-sm-12"><a href="../communication-assist-desktop-app/index.html"><img src="../img/lazyload-ph.png" data-src="../img/ScreenAssist_Home_Mockup.png" class="img-fluid mx-auto d-block lazyload" alt="Communication Assist case study cover image. Click to open case study." /></a>
-                        <h2 class="mg-md">Communication Assist Desktop App</h2>
-                        <div class="text-lg-left text-md-left text-sm-left text-left"><a href="../communication-assist-desktop-app/index.html" class="a-btn project-card-link">Read Case Study<span class="feather-icon icon-arrow-right icon-md project-card-link-icon"></span></a></div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 project-card col-sm-12"><a href="../cyberdriveillinois-website/index.html"><img src="../img/lazyload-ph.png" data-src="../img/MockupArtboard-2.png" class="img-fluid mx-auto d-block lazyload" alt="CyberDriveIllinois case study cover image.  Click to open case study." /></a>
-                        <h2 class="mg-md">CyberDriveIllinois Website</h2>
-                        <div class="text-lg-left text-md-left text-sm-left text-left"><a href="../cyberdriveillinois-website/index.html" class="a-btn project-card-link">Read Case Study<span class="feather-icon icon-arrow-right icon-md project-card-link-icon"></span></a></div>
-                    </div>
-                    <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2"><a href="../index.html" class="btn btn-d btn-sq btn-lg btn-block"><span class="feather-icon icon-arrow-left icon-spacer icon-platinum"></span>Go back to Home Page</a></div>
-                </div>
-            </div>
-        </div><!-- bloc-39 END -->
-        <!-- ScrollToTop Button --><a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a><!-- ScrollToTop Button END-->
-    </div><!-- Main container END -->
-    <!-- Additional JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-        <script>
-    var clipboard = new ClipboardJS('.footer-link');
+            function d(b, n, a, c, e, j, k) {
+                b = b + (n & c | a & ~c) + e + k;
+                return (b << j | b >>> 32 - j) + n
+            }
 
-    clipboard.on('success', function(e) {
-        var x = document.getElementById("snackbar");
-        x.className = "show";
-        setTimeout(function() {x.className = x.className.replace("show", " ");}, 3000);
-    });
+            function l(b, n, a, c, e, j, k) {
+                b = b + (n ^ a ^ c) + e + k;
+                return (b << j | b >>> 32 - j) + n
+            }
 
-    clipboard.on('error', function(e) {
-        var x = document.getElementById("snackbar2");
-        x.className = "show";
-        setTimeout(function() {x.className = x.className.replace("show", " ");}, 3000);
-    });
+            function s(b, n, a, c, e, j, k) {
+                b = b + (a ^ (n | ~c)) + e + k;
+                return (b << j | b >>> 32 - j) + n
+            }
+            for (var t = CryptoJS, r = t.lib, w = r.WordArray, v = r.Hasher, r = t.algo, b = [], x = 0; 64 > x; x++) b[x] = 4294967296 * u.abs(u.sin(x + 1)) | 0;
+            r = r.MD5 = v.extend({
+                _doReset: function() {
+                    this._hash = new w.init([1732584193, 4023233417, 2562383102, 271733878])
+                },
+                _doProcessBlock: function(q, n) {
+                    for (var a = 0; 16 > a; a++) {
+                        var c = n + a,
+                            e = q[c];
+                        q[c] = (e << 8 | e >>> 24) & 16711935 | (e << 24 | e >>> 8) & 4278255360
+                    }
+                    var a = this._hash.words,
+                        c = q[n + 0],
+                        e = q[n + 1],
+                        j = q[n + 2],
+                        k = q[n + 3],
+                        z = q[n + 4],
+                        r = q[n + 5],
+                        t = q[n + 6],
+                        w = q[n + 7],
+                        v = q[n + 8],
+                        A = q[n + 9],
+                        B = q[n + 10],
+                        C = q[n + 11],
+                        u = q[n + 12],
+                        D = q[n + 13],
+                        E = q[n + 14],
+                        x = q[n + 15],
+                        f = a[0],
+                        m = a[1],
+                        g = a[2],
+                        h = a[3],
+                        f = p(f, m, g, h, c, 7, b[0]),
+                        h = p(h, f, m, g, e, 12, b[1]),
+                        g = p(g, h, f, m, j, 17, b[2]),
+                        m = p(m, g, h, f, k, 22, b[3]),
+                        f = p(f, m, g, h, z, 7, b[4]),
+                        h = p(h, f, m, g, r, 12, b[5]),
+                        g = p(g, h, f, m, t, 17, b[6]),
+                        m = p(m, g, h, f, w, 22, b[7]),
+                        f = p(f, m, g, h, v, 7, b[8]),
+                        h = p(h, f, m, g, A, 12, b[9]),
+                        g = p(g, h, f, m, B, 17, b[10]),
+                        m = p(m, g, h, f, C, 22, b[11]),
+                        f = p(f, m, g, h, u, 7, b[12]),
+                        h = p(h, f, m, g, D, 12, b[13]),
+                        g = p(g, h, f, m, E, 17, b[14]),
+                        m = p(m, g, h, f, x, 22, b[15]),
+                        f = d(f, m, g, h, e, 5, b[16]),
+                        h = d(h, f, m, g, t, 9, b[17]),
+                        g = d(g, h, f, m, C, 14, b[18]),
+                        m = d(m, g, h, f, c, 20, b[19]),
+                        f = d(f, m, g, h, r, 5, b[20]),
+                        h = d(h, f, m, g, B, 9, b[21]),
+                        g = d(g, h, f, m, x, 14, b[22]),
+                        m = d(m, g, h, f, z, 20, b[23]),
+                        f = d(f, m, g, h, A, 5, b[24]),
+                        h = d(h, f, m, g, E, 9, b[25]),
+                        g = d(g, h, f, m, k, 14, b[26]),
+                        m = d(m, g, h, f, v, 20, b[27]),
+                        f = d(f, m, g, h, D, 5, b[28]),
+                        h = d(h, f,
+                            m, g, j, 9, b[29]),
+                        g = d(g, h, f, m, w, 14, b[30]),
+                        m = d(m, g, h, f, u, 20, b[31]),
+                        f = l(f, m, g, h, r, 4, b[32]),
+                        h = l(h, f, m, g, v, 11, b[33]),
+                        g = l(g, h, f, m, C, 16, b[34]),
+                        m = l(m, g, h, f, E, 23, b[35]),
+                        f = l(f, m, g, h, e, 4, b[36]),
+                        h = l(h, f, m, g, z, 11, b[37]),
+                        g = l(g, h, f, m, w, 16, b[38]),
+                        m = l(m, g, h, f, B, 23, b[39]),
+                        f = l(f, m, g, h, D, 4, b[40]),
+                        h = l(h, f, m, g, c, 11, b[41]),
+                        g = l(g, h, f, m, k, 16, b[42]),
+                        m = l(m, g, h, f, t, 23, b[43]),
+                        f = l(f, m, g, h, A, 4, b[44]),
+                        h = l(h, f, m, g, u, 11, b[45]),
+                        g = l(g, h, f, m, x, 16, b[46]),
+                        m = l(m, g, h, f, j, 23, b[47]),
+                        f = s(f, m, g, h, c, 6, b[48]),
+                        h = s(h, f, m, g, w, 10, b[49]),
+                        g = s(g, h, f, m,
+                            E, 15, b[50]),
+                        m = s(m, g, h, f, r, 21, b[51]),
+                        f = s(f, m, g, h, u, 6, b[52]),
+                        h = s(h, f, m, g, k, 10, b[53]),
+                        g = s(g, h, f, m, B, 15, b[54]),
+                        m = s(m, g, h, f, e, 21, b[55]),
+                        f = s(f, m, g, h, v, 6, b[56]),
+                        h = s(h, f, m, g, x, 10, b[57]),
+                        g = s(g, h, f, m, t, 15, b[58]),
+                        m = s(m, g, h, f, D, 21, b[59]),
+                        f = s(f, m, g, h, z, 6, b[60]),
+                        h = s(h, f, m, g, C, 10, b[61]),
+                        g = s(g, h, f, m, j, 15, b[62]),
+                        m = s(m, g, h, f, A, 21, b[63]);
+                    a[0] = a[0] + f | 0;
+                    a[1] = a[1] + m | 0;
+                    a[2] = a[2] + g | 0;
+                    a[3] = a[3] + h | 0
+                },
+                _doFinalize: function() {
+                    var b = this._data,
+                        n = b.words,
+                        a = 8 * this._nDataBytes,
+                        c = 8 * b.sigBytes;
+                    n[c >>> 5] |= 128 << 24 - c % 32;
+                    var e = u.floor(a /
+                        4294967296);
+                    n[(c + 64 >>> 9 << 4) + 15] = (e << 8 | e >>> 24) & 16711935 | (e << 24 | e >>> 8) & 4278255360;
+                    n[(c + 64 >>> 9 << 4) + 14] = (a << 8 | a >>> 24) & 16711935 | (a << 24 | a >>> 8) & 4278255360;
+                    b.sigBytes = 4 * (n.length + 1);
+                    this._process();
+                    b = this._hash;
+                    n = b.words;
+                    for (a = 0; 4 > a; a++) c = n[a], n[a] = (c << 8 | c >>> 24) & 16711935 | (c << 24 | c >>> 8) & 4278255360;
+                    return b
+                },
+                clone: function() {
+                    var b = v.clone.call(this);
+                    b._hash = this._hash.clone();
+                    return b
+                }
+            });
+            t.MD5 = v._createHelper(r);
+            t.HmacMD5 = v._createHmacHelper(r)
+        })(Math);
+        (function() {
+            var u = CryptoJS,
+                p = u.lib,
+                d = p.Base,
+                l = p.WordArray,
+                p = u.algo,
+                s = p.EvpKDF = d.extend({
+                    cfg: d.extend({
+                        keySize: 4,
+                        hasher: p.MD5,
+                        iterations: 1
+                    }),
+                    init: function(d) {
+                        this.cfg = this.cfg.extend(d)
+                    },
+                    compute: function(d, r) {
+                        for (var p = this.cfg, s = p.hasher.create(), b = l.create(), u = b.words, q = p.keySize, p = p.iterations; u.length < q;) {
+                            n && s.update(n);
+                            var n = s.update(d).finalize(r);
+                            s.reset();
+                            for (var a = 1; a < p; a++) n = s.finalize(n), s.reset();
+                            b.concat(n)
+                        }
+                        b.sigBytes = 4 * q;
+                        return b
+                    }
+                });
+            u.EvpKDF = function(d, l, p) {
+                return s.create(p).compute(d,
+                    l)
+            }
+        })();
+        CryptoJS.lib.Cipher || function(u) {
+            var p = CryptoJS,
+                d = p.lib,
+                l = d.Base,
+                s = d.WordArray,
+                t = d.BufferedBlockAlgorithm,
+                r = p.enc.Base64,
+                w = p.algo.EvpKDF,
+                v = d.Cipher = t.extend({
+                    cfg: l.extend(),
+                    createEncryptor: function(e, a) {
+                        return this.create(this._ENC_XFORM_MODE, e, a)
+                    },
+                    createDecryptor: function(e, a) {
+                        return this.create(this._DEC_XFORM_MODE, e, a)
+                    },
+                    init: function(e, a, b) {
+                        this.cfg = this.cfg.extend(b);
+                        this._xformMode = e;
+                        this._key = a;
+                        this.reset()
+                    },
+                    reset: function() {
+                        t.reset.call(this);
+                        this._doReset()
+                    },
+                    process: function(e) {
+                        this._append(e);
+                        return this._process()
+                    },
+                    finalize: function(e) {
+                        e && this._append(e);
+                        return this._doFinalize()
+                    },
+                    keySize: 4,
+                    ivSize: 4,
+                    _ENC_XFORM_MODE: 1,
+                    _DEC_XFORM_MODE: 2,
+                    _createHelper: function(e) {
+                        return {
+                            encrypt: function(b, k, d) {
+                                return ("string" == typeof k ? c : a).encrypt(e, b, k, d)
+                            },
+                            decrypt: function(b, k, d) {
+                                return ("string" == typeof k ? c : a).decrypt(e, b, k, d)
+                            }
+                        }
+                    }
+                });
+            d.StreamCipher = v.extend({
+                _doFinalize: function() {
+                    return this._process(!0)
+                },
+                blockSize: 1
+            });
+            var b = p.mode = {},
+                x = function(e, a, b) {
+                    var c = this._iv;
+                    c ? this._iv = u : c = this._prevBlock;
+                    for (var d = 0; d < b; d++) e[a + d] ^=
+                        c[d]
+                },
+                q = (d.BlockCipherMode = l.extend({
+                    createEncryptor: function(e, a) {
+                        return this.Encryptor.create(e, a)
+                    },
+                    createDecryptor: function(e, a) {
+                        return this.Decryptor.create(e, a)
+                    },
+                    init: function(e, a) {
+                        this._cipher = e;
+                        this._iv = a
+                    }
+                })).extend();
+            q.Encryptor = q.extend({
+                processBlock: function(e, a) {
+                    var b = this._cipher,
+                        c = b.blockSize;
+                    x.call(this, e, a, c);
+                    b.encryptBlock(e, a);
+                    this._prevBlock = e.slice(a, a + c)
+                }
+            });
+            q.Decryptor = q.extend({
+                processBlock: function(e, a) {
+                    var b = this._cipher,
+                        c = b.blockSize,
+                        d = e.slice(a, a + c);
+                    b.decryptBlock(e, a);
+                    x.call(this,
+                        e, a, c);
+                    this._prevBlock = d
+                }
+            });
+            b = b.CBC = q;
+            q = (p.pad = {}).Pkcs7 = {
+                pad: function(a, b) {
+                    for (var c = 4 * b, c = c - a.sigBytes % c, d = c << 24 | c << 16 | c << 8 | c, l = [], n = 0; n < c; n += 4) l.push(d);
+                    c = s.create(l, c);
+                    a.concat(c)
+                },
+                unpad: function(a) {
+                    a.sigBytes -= a.words[a.sigBytes - 1 >>> 2] & 255
+                }
+            };
+            d.BlockCipher = v.extend({
+                cfg: v.cfg.extend({
+                    mode: b,
+                    padding: q
+                }),
+                reset: function() {
+                    v.reset.call(this);
+                    var a = this.cfg,
+                        b = a.iv,
+                        a = a.mode;
+                    if (this._xformMode == this._ENC_XFORM_MODE) var c = a.createEncryptor;
+                    else c = a.createDecryptor, this._minBufferSize = 1;
+                    this._mode = c.call(a,
+                        this, b && b.words)
+                },
+                _doProcessBlock: function(a, b) {
+                    this._mode.processBlock(a, b)
+                },
+                _doFinalize: function() {
+                    var a = this.cfg.padding;
+                    if (this._xformMode == this._ENC_XFORM_MODE) {
+                        a.pad(this._data, this.blockSize);
+                        var b = this._process(!0)
+                    } else b = this._process(!0), a.unpad(b);
+                    return b
+                },
+                blockSize: 4
+            });
+            var n = d.CipherParams = l.extend({
+                    init: function(a) {
+                        this.mixIn(a)
+                    },
+                    toString: function(a) {
+                        return (a || this.formatter).stringify(this)
+                    }
+                }),
+                b = (p.format = {}).OpenSSL = {
+                    stringify: function(a) {
+                        var b = a.ciphertext;
+                        a = a.salt;
+                        return (a ? s.create([1398893684,
+                            1701076831
+                        ]).concat(a).concat(b) : b).toString(r)
+                    },
+                    parse: function(a) {
+                        a = r.parse(a);
+                        var b = a.words;
+                        if (1398893684 == b[0] && 1701076831 == b[1]) {
+                            var c = s.create(b.slice(2, 4));
+                            b.splice(0, 4);
+                            a.sigBytes -= 16
+                        }
+                        return n.create({
+                            ciphertext: a,
+                            salt: c
+                        })
+                    }
+                },
+                a = d.SerializableCipher = l.extend({
+                    cfg: l.extend({
+                        format: b
+                    }),
+                    encrypt: function(a, b, c, d) {
+                        d = this.cfg.extend(d);
+                        var l = a.createEncryptor(c, d);
+                        b = l.finalize(b);
+                        l = l.cfg;
+                        return n.create({
+                            ciphertext: b,
+                            key: c,
+                            iv: l.iv,
+                            algorithm: a,
+                            mode: l.mode,
+                            padding: l.padding,
+                            blockSize: a.blockSize,
+                            formatter: d.format
+                        })
+                    },
+                    decrypt: function(a, b, c, d) {
+                        d = this.cfg.extend(d);
+                        b = this._parse(b, d.format);
+                        return a.createDecryptor(c, d).finalize(b.ciphertext)
+                    },
+                    _parse: function(a, b) {
+                        return "string" == typeof a ? b.parse(a, this) : a
+                    }
+                }),
+                p = (p.kdf = {}).OpenSSL = {
+                    execute: function(a, b, c, d) {
+                        d || (d = s.random(8));
+                        a = w.create({
+                            keySize: b + c
+                        }).compute(a, d);
+                        c = s.create(a.words.slice(b), 4 * c);
+                        a.sigBytes = 4 * b;
+                        return n.create({
+                            key: a,
+                            iv: c,
+                            salt: d
+                        })
+                    }
+                },
+                c = d.PasswordBasedCipher = a.extend({
+                    cfg: a.cfg.extend({
+                        kdf: p
+                    }),
+                    encrypt: function(b, c, d, l) {
+                        l = this.cfg.extend(l);
+                        d = l.kdf.execute(d,
+                            b.keySize, b.ivSize);
+                        l.iv = d.iv;
+                        b = a.encrypt.call(this, b, c, d.key, l);
+                        b.mixIn(d);
+                        return b
+                    },
+                    decrypt: function(b, c, d, l) {
+                        l = this.cfg.extend(l);
+                        c = this._parse(c, l.format);
+                        d = l.kdf.execute(d, b.keySize, b.ivSize, c.salt);
+                        l.iv = d.iv;
+                        return a.decrypt.call(this, b, c, d.key, l)
+                    }
+                })
+        }();
+        (function() {
+            for (var u = CryptoJS, p = u.lib.BlockCipher, d = u.algo, l = [], s = [], t = [], r = [], w = [], v = [], b = [], x = [], q = [], n = [], a = [], c = 0; 256 > c; c++) a[c] = 128 > c ? c << 1 : c << 1 ^ 283;
+            for (var e = 0, j = 0, c = 0; 256 > c; c++) {
+                var k = j ^ j << 1 ^ j << 2 ^ j << 3 ^ j << 4,
+                    k = k >>> 8 ^ k & 255 ^ 99;
+                l[e] = k;
+                s[k] = e;
+                var z = a[e],
+                    F = a[z],
+                    G = a[F],
+                    y = 257 * a[k] ^ 16843008 * k;
+                t[e] = y << 24 | y >>> 8;
+                r[e] = y << 16 | y >>> 16;
+                w[e] = y << 8 | y >>> 24;
+                v[e] = y;
+                y = 16843009 * G ^ 65537 * F ^ 257 * z ^ 16843008 * e;
+                b[k] = y << 24 | y >>> 8;
+                x[k] = y << 16 | y >>> 16;
+                q[k] = y << 8 | y >>> 24;
+                n[k] = y;
+                e ? (e = z ^ a[a[a[G ^ z]]], j ^= a[a[j]]) : e = j = 1
+            }
+            var H = [0, 1, 2, 4, 8,
+                    16, 32, 64, 128, 27, 54
+                ],
+                d = d.AES = p.extend({
+                    _doReset: function() {
+                        for (var a = this._key, c = a.words, d = a.sigBytes / 4, a = 4 * ((this._nRounds = d + 6) + 1), e = this._keySchedule = [], j = 0; j < a; j++)
+                            if (j < d) e[j] = c[j];
+                            else {
+                                var k = e[j - 1];
+                                j % d ? 6 < d && 4 == j % d && (k = l[k >>> 24] << 24 | l[k >>> 16 & 255] << 16 | l[k >>> 8 & 255] << 8 | l[k & 255]) : (k = k << 8 | k >>> 24, k = l[k >>> 24] << 24 | l[k >>> 16 & 255] << 16 | l[k >>> 8 & 255] << 8 | l[k & 255], k ^= H[j / d | 0] << 24);
+                                e[j] = e[j - d] ^ k
+                            } c = this._invKeySchedule = [];
+                        for (d = 0; d < a; d++) j = a - d, k = d % 4 ? e[j] : e[j - 4], c[d] = 4 > d || 4 >= j ? k : b[l[k >>> 24]] ^ x[l[k >>> 16 & 255]] ^ q[l[k >>>
+                            8 & 255]] ^ n[l[k & 255]]
+                    },
+                    encryptBlock: function(a, b) {
+                        this._doCryptBlock(a, b, this._keySchedule, t, r, w, v, l)
+                    },
+                    decryptBlock: function(a, c) {
+                        var d = a[c + 1];
+                        a[c + 1] = a[c + 3];
+                        a[c + 3] = d;
+                        this._doCryptBlock(a, c, this._invKeySchedule, b, x, q, n, s);
+                        d = a[c + 1];
+                        a[c + 1] = a[c + 3];
+                        a[c + 3] = d
+                    },
+                    _doCryptBlock: function(a, b, c, d, e, j, l, f) {
+                        for (var m = this._nRounds, g = a[b] ^ c[0], h = a[b + 1] ^ c[1], k = a[b + 2] ^ c[2], n = a[b + 3] ^ c[3], p = 4, r = 1; r < m; r++) var q = d[g >>> 24] ^ e[h >>> 16 & 255] ^ j[k >>> 8 & 255] ^ l[n & 255] ^ c[p++],
+                            s = d[h >>> 24] ^ e[k >>> 16 & 255] ^ j[n >>> 8 & 255] ^ l[g & 255] ^ c[p++],
+                            t =
+                            d[k >>> 24] ^ e[n >>> 16 & 255] ^ j[g >>> 8 & 255] ^ l[h & 255] ^ c[p++],
+                            n = d[n >>> 24] ^ e[g >>> 16 & 255] ^ j[h >>> 8 & 255] ^ l[k & 255] ^ c[p++],
+                            g = q,
+                            h = s,
+                            k = t;
+                        q = (f[g >>> 24] << 24 | f[h >>> 16 & 255] << 16 | f[k >>> 8 & 255] << 8 | f[n & 255]) ^ c[p++];
+                        s = (f[h >>> 24] << 24 | f[k >>> 16 & 255] << 16 | f[n >>> 8 & 255] << 8 | f[g & 255]) ^ c[p++];
+                        t = (f[k >>> 24] << 24 | f[n >>> 16 & 255] << 16 | f[g >>> 8 & 255] << 8 | f[h & 255]) ^ c[p++];
+                        n = (f[n >>> 24] << 24 | f[g >>> 16 & 255] << 16 | f[h >>> 8 & 255] << 8 | f[k & 255]) ^ c[p++];
+                        a[b] = q;
+                        a[b + 1] = s;
+                        a[b + 2] = t;
+                        a[b + 3] = n
+                    },
+                    keySize: 8
+                });
+            u.AES = p._createHelper(d)
+        })();
     </script>
-    <script src="../js/jquery-3.3.1.min.js?4011"></script>
-    <script src="../js/bootstrap.bundle.min.js?5393"></script>
-    <script src="../js/blocs.min.js?3074"></script>
-    <script src="../js/jquery.touchSwipe.min.js" defer></script>
-    <script src="../js/lazysizes.min.js" defer></script>
-    <script src="../js/random-text.js?909"></script>
-    <script src="../js/page-scroll-progress.js?5364"></script>
-    <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
-    <!-- Additional JS END -->
-    <!-- Preloader -->
-    <div id="page-loading-blocs-notifaction" class="page-preloader"></div><!-- Preloader END -->
+    <script>
+        /*
+CryptoJS v3.1.2
+code.google.com/p/crypto-js
+(c) 2009-2013 by Jeff Mott. All rights reserved.
+code.google.com/p/crypto-js/wiki/License
+*/
+        var CryptoJS = CryptoJS || function(g, j) {
+            var e = {},
+                d = e.lib = {},
+                m = function() {},
+                n = d.Base = {
+                    extend: function(a) {
+                        m.prototype = this;
+                        var c = new m;
+                        a && c.mixIn(a);
+                        c.hasOwnProperty("init") || (c.init = function() {
+                            c.$super.init.apply(this, arguments)
+                        });
+                        c.init.prototype = c;
+                        c.$super = this;
+                        return c
+                    },
+                    create: function() {
+                        var a = this.extend();
+                        a.init.apply(a, arguments);
+                        return a
+                    },
+                    init: function() {},
+                    mixIn: function(a) {
+                        for (var c in a) a.hasOwnProperty(c) && (this[c] = a[c]);
+                        a.hasOwnProperty("toString") && (this.toString = a.toString)
+                    },
+                    clone: function() {
+                        return this.init.prototype.extend(this)
+                    }
+                },
+                q = d.WordArray = n.extend({
+                    init: function(a, c) {
+                        a = this.words = a || [];
+                        this.sigBytes = c != j ? c : 4 * a.length
+                    },
+                    toString: function(a) {
+                        return (a || l).stringify(this)
+                    },
+                    concat: function(a) {
+                        var c = this.words,
+                            p = a.words,
+                            f = this.sigBytes;
+                        a = a.sigBytes;
+                        this.clamp();
+                        if (f % 4)
+                            for (var b = 0; b < a; b++) c[f + b >>> 2] |= (p[b >>> 2] >>> 24 - 8 * (b % 4) & 255) << 24 - 8 * ((f + b) % 4);
+                        else if (65535 < p.length)
+                            for (b = 0; b < a; b += 4) c[f + b >>> 2] = p[b >>> 2];
+                        else c.push.apply(c, p);
+                        this.sigBytes += a;
+                        return this
+                    },
+                    clamp: function() {
+                        var a = this.words,
+                            c = this.sigBytes;
+                        a[c >>> 2] &= 4294967295 <<
+                            32 - 8 * (c % 4);
+                        a.length = g.ceil(c / 4)
+                    },
+                    clone: function() {
+                        var a = n.clone.call(this);
+                        a.words = this.words.slice(0);
+                        return a
+                    },
+                    random: function(a) {
+                        for (var c = [], b = 0; b < a; b += 4) c.push(4294967296 * g.random() | 0);
+                        return new q.init(c, a)
+                    }
+                }),
+                b = e.enc = {},
+                l = b.Hex = {
+                    stringify: function(a) {
+                        var c = a.words;
+                        a = a.sigBytes;
+                        for (var b = [], f = 0; f < a; f++) {
+                            var d = c[f >>> 2] >>> 24 - 8 * (f % 4) & 255;
+                            b.push((d >>> 4).toString(16));
+                            b.push((d & 15).toString(16))
+                        }
+                        return b.join("")
+                    },
+                    parse: function(a) {
+                        for (var c = a.length, b = [], f = 0; f < c; f += 2) b[f >>> 3] |= parseInt(a.substr(f,
+                            2), 16) << 24 - 4 * (f % 8);
+                        return new q.init(b, c / 2)
+                    }
+                },
+                k = b.Latin1 = {
+                    stringify: function(a) {
+                        var c = a.words;
+                        a = a.sigBytes;
+                        for (var b = [], f = 0; f < a; f++) b.push(String.fromCharCode(c[f >>> 2] >>> 24 - 8 * (f % 4) & 255));
+                        return b.join("")
+                    },
+                    parse: function(a) {
+                        for (var c = a.length, b = [], f = 0; f < c; f++) b[f >>> 2] |= (a.charCodeAt(f) & 255) << 24 - 8 * (f % 4);
+                        return new q.init(b, c)
+                    }
+                },
+                h = b.Utf8 = {
+                    stringify: function(a) {
+                        try {
+                            return decodeURIComponent(escape(k.stringify(a)))
+                        } catch (b) {
+                            throw Error("Malformed UTF-8 data");
+                        }
+                    },
+                    parse: function(a) {
+                        return k.parse(unescape(encodeURIComponent(a)))
+                    }
+                },
+                u = d.BufferedBlockAlgorithm = n.extend({
+                    reset: function() {
+                        this._data = new q.init;
+                        this._nDataBytes = 0
+                    },
+                    _append: function(a) {
+                        "string" == typeof a && (a = h.parse(a));
+                        this._data.concat(a);
+                        this._nDataBytes += a.sigBytes
+                    },
+                    _process: function(a) {
+                        var b = this._data,
+                            d = b.words,
+                            f = b.sigBytes,
+                            l = this.blockSize,
+                            e = f / (4 * l),
+                            e = a ? g.ceil(e) : g.max((e | 0) - this._minBufferSize, 0);
+                        a = e * l;
+                        f = g.min(4 * a, f);
+                        if (a) {
+                            for (var h = 0; h < a; h += l) this._doProcessBlock(d, h);
+                            h = d.splice(0, a);
+                            b.sigBytes -= f
+                        }
+                        return new q.init(h, f)
+                    },
+                    clone: function() {
+                        var a = n.clone.call(this);
+                        a._data = this._data.clone();
+                        return a
+                    },
+                    _minBufferSize: 0
+                });
+            d.Hasher = u.extend({
+                cfg: n.extend(),
+                init: function(a) {
+                    this.cfg = this.cfg.extend(a);
+                    this.reset()
+                },
+                reset: function() {
+                    u.reset.call(this);
+                    this._doReset()
+                },
+                update: function(a) {
+                    this._append(a);
+                    this._process();
+                    return this
+                },
+                finalize: function(a) {
+                    a && this._append(a);
+                    return this._doFinalize()
+                },
+                blockSize: 16,
+                _createHelper: function(a) {
+                    return function(b, d) {
+                        return (new a.init(d)).finalize(b)
+                    }
+                },
+                _createHmacHelper: function(a) {
+                    return function(b, d) {
+                        return (new w.HMAC.init(a,
+                            d)).finalize(b)
+                    }
+                }
+            });
+            var w = e.algo = {};
+            return e
+        }(Math);
+        (function() {
+            var g = CryptoJS,
+                j = g.lib,
+                e = j.WordArray,
+                d = j.Hasher,
+                m = [],
+                j = g.algo.SHA1 = d.extend({
+                    _doReset: function() {
+                        this._hash = new e.init([1732584193, 4023233417, 2562383102, 271733878, 3285377520])
+                    },
+                    _doProcessBlock: function(d, e) {
+                        for (var b = this._hash.words, l = b[0], k = b[1], h = b[2], g = b[3], j = b[4], a = 0; 80 > a; a++) {
+                            if (16 > a) m[a] = d[e + a] | 0;
+                            else {
+                                var c = m[a - 3] ^ m[a - 8] ^ m[a - 14] ^ m[a - 16];
+                                m[a] = c << 1 | c >>> 31
+                            }
+                            c = (l << 5 | l >>> 27) + j + m[a];
+                            c = 20 > a ? c + ((k & h | ~k & g) + 1518500249) : 40 > a ? c + ((k ^ h ^ g) + 1859775393) : 60 > a ? c + ((k & h | k & g | h & g) - 1894007588) : c + ((k ^ h ^
+                                g) - 899497514);
+                            j = g;
+                            g = h;
+                            h = k << 30 | k >>> 2;
+                            k = l;
+                            l = c
+                        }
+                        b[0] = b[0] + l | 0;
+                        b[1] = b[1] + k | 0;
+                        b[2] = b[2] + h | 0;
+                        b[3] = b[3] + g | 0;
+                        b[4] = b[4] + j | 0
+                    },
+                    _doFinalize: function() {
+                        var d = this._data,
+                            e = d.words,
+                            b = 8 * this._nDataBytes,
+                            l = 8 * d.sigBytes;
+                        e[l >>> 5] |= 128 << 24 - l % 32;
+                        e[(l + 64 >>> 9 << 4) + 14] = Math.floor(b / 4294967296);
+                        e[(l + 64 >>> 9 << 4) + 15] = b;
+                        d.sigBytes = 4 * e.length;
+                        this._process();
+                        return this._hash
+                    },
+                    clone: function() {
+                        var e = d.clone.call(this);
+                        e._hash = this._hash.clone();
+                        return e
+                    }
+                });
+            g.SHA1 = d._createHelper(j);
+            g.HmacSHA1 = d._createHmacHelper(j)
+        })();
+        (function() {
+            var g = CryptoJS,
+                j = g.enc.Utf8;
+            g.algo.HMAC = g.lib.Base.extend({
+                init: function(e, d) {
+                    e = this._hasher = new e.init;
+                    "string" == typeof d && (d = j.parse(d));
+                    var g = e.blockSize,
+                        n = 4 * g;
+                    d.sigBytes > n && (d = e.finalize(d));
+                    d.clamp();
+                    for (var q = this._oKey = d.clone(), b = this._iKey = d.clone(), l = q.words, k = b.words, h = 0; h < g; h++) l[h] ^= 1549556828, k[h] ^= 909522486;
+                    q.sigBytes = b.sigBytes = n;
+                    this.reset()
+                },
+                reset: function() {
+                    var e = this._hasher;
+                    e.reset();
+                    e.update(this._iKey)
+                },
+                update: function(e) {
+                    this._hasher.update(e);
+                    return this
+                },
+                finalize: function(e) {
+                    var d =
+                        this._hasher;
+                    e = d.finalize(e);
+                    d.reset();
+                    return d.finalize(this._oKey.clone().concat(e))
+                }
+            })
+        })();
+        (function() {
+            var g = CryptoJS,
+                j = g.lib,
+                e = j.Base,
+                d = j.WordArray,
+                j = g.algo,
+                m = j.HMAC,
+                n = j.PBKDF2 = e.extend({
+                    cfg: e.extend({
+                        keySize: 4,
+                        hasher: j.SHA1,
+                        iterations: 1
+                    }),
+                    init: function(d) {
+                        this.cfg = this.cfg.extend(d)
+                    },
+                    compute: function(e, b) {
+                        for (var g = this.cfg, k = m.create(g.hasher, e), h = d.create(), j = d.create([1]), n = h.words, a = j.words, c = g.keySize, g = g.iterations; n.length < c;) {
+                            var p = k.update(b).finalize(j);
+                            k.reset();
+                            for (var f = p.words, v = f.length, s = p, t = 1; t < g; t++) {
+                                s = k.finalize(s);
+                                k.reset();
+                                for (var x = s.words, r = 0; r < v; r++) f[r] ^= x[r]
+                            }
+                            h.concat(p);
+                            a[0]++
+                        }
+                        h.sigBytes = 4 * c;
+                        return h
+                    }
+                });
+            g.PBKDF2 = function(d, b, e) {
+                return n.create(e).compute(d, b)
+            }
+        })();
+    </script>
+    <script>
+        /*! srcdoc-polyfill - v0.1.1 - 2013-03-01
+         * http://github.com/jugglinmike/srcdoc-polyfill/
+         * Copyright (c) 2013 Mike Pennisi; Licensed MIT */
+        (function(window, document, undefined) {
+
+            var idx, iframes;
+            var _srcDoc = window.srcDoc;
+            var isCompliant = !!("srcdoc" in document.createElement("iframe"));
+            var implementations = {
+                compliant: function(iframe, content) {
+
+                    if (content) {
+                        iframe.setAttribute("srcdoc", content);
+                    }
+                },
+                legacy: function(iframe, content) {
+
+                    var jsUrl;
+
+                    if (!iframe || !iframe.getAttribute) {
+                        return;
+                    }
+
+                    if (!content) {
+                        content = iframe.getAttribute("srcdoc");
+                    } else {
+                        iframe.setAttribute("srcdoc", content);
+                    }
+
+                    if (content) {
+                        // The value returned by a script-targeted URL will be used as
+                        // the iFrame's content. Create such a URL which returns the
+                        // iFrame element's `srcdoc` attribute.
+                        jsUrl = "javascript: window.frameElement.getAttribute('srcdoc');";
+
+                        iframe.setAttribute("src", jsUrl);
+
+                        // Explicitly set the iFrame's window.location for
+                        // compatability with IE9, which does not react to changes in
+                        // the `src` attribute when it is a `javascript:` URL, for
+                        // some reason
+                        if (iframe.contentWindow) {
+                            iframe.contentWindow.location = jsUrl;
+                        }
+                    }
+                }
+            };
+            var srcDoc = window.srcDoc = {
+                // Assume the best
+                set: implementations.compliant,
+                noConflict: function() {
+                    window.srcDoc = _srcDoc;
+                    return srcDoc;
+                }
+            };
+
+            // If the browser supports srcdoc, no shimming is necessary
+            if (isCompliant) {
+                return;
+            }
+
+            srcDoc.set = implementations.legacy;
+
+            // Automatically shim any iframes already present in the document
+            iframes = document.getElementsByTagName("iframe");
+            idx = iframes.length;
+
+            while (idx--) {
+                srcDoc.set(iframes[idx]);
+            }
+
+        }(this, this.document));
+    </script>
+    <script>
+        var pl = {
+            "salt": "1yCmw1rYkocyIGxvti4n0k0/12Cl7DZUKxT/L63xxWw=",
+            "iv": "DTHCjsclEhwC4OzfLIQGHQ==",
+            "data": "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"
+        };
+
+        var submitPass = document.getElementById('submitPass');
+        var passEl = document.getElementById('pass');
+        var invalidPassEl = document.getElementById('invalidPass');
+        var successEl = document.getElementById('success');
+        var contentFrame = document.getElementById('contentFrame');
+
+        if (pl === "") {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
+        }
+
+        function doSubmit(evt) {
+            try {
+                var decrypted = decryptFile(CryptoJS.enc.Base64.parse(pl.data), passEl.value, CryptoJS.enc.Base64.parse(pl.salt), CryptoJS.enc.Base64.parse(pl.iv));
+                if (decrypted === "") throw "No data returned";
+
+                // Set default iframe link targets to _top so all links break out of the iframe
+                decrypted = decrypted.replace("<head>", "<head><base href=\".\" target=\"_top\">");
+
+                srcDoc.set(contentFrame, decrypted);
+
+                successEl.style.display = "inline";
+                passEl.disabled = true;
+                submitPass.disabled = true;
+                setTimeout(function() {
+                    dialogWrap.style.display = "none";
+                }, 1000);
+            } catch (e) {
+                invalidPassEl.style.display = "inline";
+                passEl.value = "";
+            }
+        }
+
+        submitPass.onclick = doSubmit;
+        passEl.onkeypress = function(e) {
+            if (!e) e = window.event;
+            var keyCode = e.keyCode || e.which;
+            invalidPassEl.style.display = "none";
+            if (keyCode == '13') {
+                // Enter pressed
+                doSubmit();
+                return false;
+            }
+        }
+
+        function decryptFile(contents, password, salt, iv) {
+            var _cp = CryptoJS.lib.CipherParams.create({
+                ciphertext: contents
+            });
+            var key = CryptoJS.PBKDF2(password, salt, {
+                keySize: 256 / 32,
+                iterations: 100
+            });
+            var decrypted = CryptoJS.AES.decrypt(_cp, key, {
+                iv: iv
+            });
+
+            return decrypted.toString(CryptoJS.enc.Utf8);
+        }
+    </script>
 </body></html>

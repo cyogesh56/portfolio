@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "feather";
     src: url(../fonts/feather-webfont.eot);
@@ -542,5 +540,3 @@
 .icon-ellipsis:before {
     content: "\e129"
 }
-
-

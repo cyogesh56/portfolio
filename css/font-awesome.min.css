@@ -1,10 +1,7 @@
-
-
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-
 @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -19,7 +16,7 @@
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale
 }
 
 .fa-lg {
@@ -55,7 +52,7 @@
     list-style-type: none
 }
 
-.fa-ul>li {
+.fa-ul > li {
     position: relative
 }
 
@@ -124,6 +121,7 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -135,6 +133,7 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -531,20 +530,6 @@
 
 .fa-eject:before {
     content: "\f052"
-}
-
-.fa-chevron-left {
-    padding: 15px;
-    background: white;
-    border-radius: 6px;
-    border: 1px solid gray;
-}
-
-.fa-chevron-right {
-    padding: 15px;
-    background: white;
-    border-radius: 6px;
-    border: 1px solid gray;
 }
 
 .fa-chevron-left:before {
@@ -3058,5 +3043,3 @@
     overflow: visible;
     clip: auto
 }
-
-

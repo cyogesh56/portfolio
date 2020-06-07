@@ -557,7 +557,7 @@ a[data-lightbox]:hover img {
 .prev-lightbox:hover {
     opacity: 1.0;
     background: #0A32F7;
-    color: #DFE6ED !important;
+    color: #FAFAFA !important;
     border: 1px solid rgba(0, 0, 0, 0.3) !important;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
@@ -569,7 +569,7 @@ a[data-lightbox]:hover img {
 .next-lightbox:active,
 .prev-lightbox:active {
     opacity: 1.0;
-    color: #DFE6ED !important;
+    color: #FAFAFA !important;
     background: #0A32F7;
     border: 0px !important;
     transition: all .2s ease-in-out;
@@ -586,7 +586,7 @@ a[data-lightbox]:hover img {
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
-    color: #DFE6ED !important;
+    color: #FAFAFA !important;
     background: #0958F7;
     transition: all .2s ease-in-out;
     position: fixed;
@@ -889,7 +889,7 @@ a:focus {
 
 .btn {
     background-color: #0958F7;
-    color: #DFE6ED !important;
+    color: #FAFAFA !important;
     font-family: "Plex Sans VF";
     font-weight: 400;
     margin: 25px 25px 25px 25px;
@@ -901,7 +901,7 @@ a:focus {
 
 .btn:hover {
     font-weight: bold !important;
-    color: #DFE6ED !important;
+    color: #FAFAFA !important;
     background-color: #0A32F7;
     font-family: "Plex Sans VF";
     transform: scale(1);
@@ -911,7 +911,7 @@ a:focus {
 }
 
 .btn:active {
-    color: #DFE6ED !important;
+    color: #FAFAFA !important;
     outline: none !important;
     font-weight: normal !important;
     background-color: #0A32F7;
@@ -920,7 +920,7 @@ a:focus {
 }
 
 .btn:focus {
-    color: #DFE6ED !important;
+    color: #FAFAFA !important;
     outline: 1px dashed #DEF6ED;
     border: 1px dashed #DFE6ED;
     box-shadow: none !important;
@@ -1489,7 +1489,7 @@ a:focus {
 
     .btn:active {
         background-color: #0932F7;
-        color: #DFE6ED !important;
+        color: #FAFAFA !important;
     }
 
     .tag-button {
@@ -1655,7 +1655,7 @@ a:focus {
     }
 
     .btn:active {
-        color: #DFE6ED !important;
+        color: #FAFAFA !important;
     }
 
     .h1-style {

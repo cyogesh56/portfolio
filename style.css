@@ -1103,7 +1103,10 @@ a:focus {
     font-weight: 400;
     font-size: 16px;
     margin: 0.5rem;
-    padding: 0.8rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
     border-radius: 50px;
 }
 

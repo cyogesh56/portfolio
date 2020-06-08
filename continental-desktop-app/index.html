@@ -238,7 +238,7 @@
 </head>
 
 <body data-clean-url="true">
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <iframe id="contentFrame" frameBorder="0" title="Password Protected page" allowfullscreen></iframe>
     <div class="page-contanier" id="dialogWrap">
         <div class="bloc full-width-bloc l-bloc" id="dialogWrapCell">
             <div class="container">
@@ -255,8 +255,8 @@
                                 <div id="snackbar">Email copied to your clipboard.</div>
                     <div id="snackbar2">Can't copy Email to your clipboard.</div>
 
-                                <p id="passwordPrompt">Password</p>
-                                <input id="pass" type="password" name="pass">
+                                <label id="passwordPrompt">Password</label>
+                                <input aria-label="Enter page password" id="pass" type="password" name="pass">
                                 <div>
                                     <span id="messageWrapper">
                                         <span id="invalidPass" class="notifyText">Sorry, please try again.</span>

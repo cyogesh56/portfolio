@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-timezone: UTC
+timezone: America/Chicago
 collections:
   posts:
     title: Posts

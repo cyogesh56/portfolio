@@ -1,44 +1,589 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-<loc>https://cy56.work</loc>
-<lastmod>2020-09-26</lastmod>
-<changefreq>Weekly</changefreq>
-<priority>1.0</priority>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url>
+	<loc>https://cy56.work</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>1.0</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/StJude.png</image:loc>
+	<image:title>ALSAC project cover image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Continental_logo_locked.png</image:loc>
+	<image:title>Continental AG project cover image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/MultipleDevicesMockup.png</image:loc>
+	<image:title>Ventra Chicago project cover image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/ScreenAssist_Home_Mockup.png</image:loc>
+	<image:title>Communication Assist project cover image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/iPhone7-minimal-mockup.png</image:loc>
+	<image:title>BeDOnor project Cover Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/ad9b4d56722193.59b99bbec9807.png</image:loc>
+	<image:title>Shades Android Game Cover Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202021-10-12%20at%201.27.19%20PM.png</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
 </url>
 <url>
-<loc>https://cy56.work/alsac-st-jude-ux-enhancement/index.html</loc>
-<lastmod>2020-09-26</lastmod>
-<changefreq>Weekly</changefreq>
-<priority>0.5</priority>
+	<loc>https://cy56.work/alsac-sjcrh.html</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/tamer-rashid-alsac-media-download-00145723-015.jpg</image:loc>
+	<image:title>ALSAC building inside St. Jude campus</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Image%208.png</image:loc>
+	<image:title>Screenshot of a donation processing app</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Artboard%20–%201.png</image:loc>
+	<image:title>Screenshot of race-day check-in app</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Mariella%20Lead%20Staff.png</image:loc>
+	<image:title>Mariella Lead Staff Persona outlining needs, goals, motivations, frustrations and challenges</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Madison%20Volunteer.png</image:loc>
+	<image:title>Madison Volunteer Persona outlining needs, goals, motivations, frustrations and challenges</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Professional%20Jerry.png</image:loc>
+	<image:title>Jerry St. Jude Hero Persona outlining needs, goals, motivations, frustrations and challenges</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/allison-the-event-support.png</image:loc>
+	<image:title>Allison The Event Support Persona outlining needs, goals, motivations, frustrations and challenges</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202021-09-13%20at%201.29.49%20PM.png</image:loc>
+	<image:title>Screenshot of process map outlining what role each persona plays to make event happen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Web%201920%20–%201.png</image:loc>
+	<image:title>Annotated screenshot outlining the key enhancements on step 1 of donation processing app.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Web%201920%20–%202.png</image:loc>
+	<image:title>Annotated screenshot outlining the key enhancements on step 2 of donation processing app.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Web%201920%20–%203.png</image:loc>
+	<image:title>Annotated screenshot of donation processing app outlining the smart division of screen content</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Web%201920%20–%205.png</image:loc>
+	<image:title>Annotated screenshot of race-day check-in app outlining enhancements</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Web%201920%20–%207.png</image:loc>
+	<image:title>Annotated screenshot of race-day check-in app outlining smart division of screen area</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202020-01-16%20at%202.05.59%20PM.png</image:loc>
+	<image:title>Screenshot of Event Management app using a completely different UI and UX</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Image%203.png</image:loc>
+	<image:title>Screenshot of donation processing app using a completely different UI and UX</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Design%20QA%202.png</image:loc>
+	<image:title>Annotated screenshot outlining inconsistencies with developed app</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Radio%20Home%20Page-a.png</image:loc>
+	<image:title>Annotated screenshot outlining inconsistencies with old version of an app</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/atomic-design-process.png</image:loc>
+	<image:title>Image showing atomic design process</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202021-09-21%20at%2010.30.48%20PM.png</image:loc>
+	<image:title>Screenshot showing differnt types of buttons and corresponding HTML, CSS and React code</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202020-09-19%20at%203.23.40%20PM.png</image:loc>
+	<image:title>Screenshot showing two different ways of using text input component as pattern</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202020-09-19%20at%203.25.15%20PM.png</image:loc>
+	<image:title>Screenshot outlining Dos and Don'ts of using Message Box as pattern</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/614a88f974ef6159745435.gif</image:loc>
+	<image:title>GIF showing animation of UCD Micro Workshop first slide, completely made in Powerpoint</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/UCD%20Micro%20Workshop%20Agendas%20–%204a.png</image:loc>
+	<image:title>A bi-weekly calendar showing 5-week worth of Micro Workshop Agendas</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202020-05-18%20at%202.18.17%20PM.png</image:loc>
+	<image:title>A Screenshot taken during empathy Mapping UCD Micro Workshop</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/FB215217-DC56-47C8-9DAC-0E63C3A9D11D.png</image:loc>
+	<image:title>A Screenshot taken during Affinity Mapping Micro Workshop</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Continental_logo_locked.png</image:loc>
+	<image:title>Continental AG project screenshot</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
 </url>
 <url>
-<loc>https://cy56.work/ventra-chicago-mobile-app/index.html</loc>
-<lastmod>2020-09-26</lastmod>
-<changefreq>Weekly</changefreq>
-<priority>0.5</priority>
+	<loc>https://cy56.work/continental-ag.html</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/CRED03-141109826-AR.jpeg.jpg</image:loc>
+	<image:title>A high-angle photo of Continental's location in Deer Park, Illinois</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/csm_Asus_Vivobook_S15_S533EQ_Ansicht6_56e03bb5ce.jpg</image:loc>
+	<image:title>Image of a laptop on floor under direct sinlight</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/20190728_020535.jpg</image:loc>
+	<image:title>Image of a sketch showing a wizard-style design of new user experiene.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/TuningAsst.jpg</image:loc>
+	<image:title>Graphic showing various logics implemented in the wizard-style interface.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Scalable_Design_System.png</image:loc>
+	<image:title>Image showing design system broken down into Atoms, Molecule, Organism, Template and Page.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/CoverImg.png</image:loc>
+	<image:title>Mockup showing the app (blurred) running on a laptop inside a card under harsh light.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/MultipleDevicesMockup.png</image:loc>
+	<image:title>Ventra Chicago Mobile app project screenshot</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
 </url>
 <url>
-<loc>https://cy56.work/continental-desktop-app/index.html</loc>
-<lastmod>2020-09-26</lastmod>
-<changefreq>Weekly</changefreq>
-<priority>0.5</priority>
+	<loc>https://cy56.work/ventra-chicago.html</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/featureheader_busandtrain_washington.jpg</image:loc>
+	<image:title>Photo of Chicago Transit Authority run train and bus.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202019-09-16%20at%203.25.11%20AM.png</image:loc>
+	<image:title>Trello screenshot showing competitive analysis between Ventra, Google Maps, Transit and CityMappter apps.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/A4%20Paper%20Sheet%20Mockup.png</image:loc>
+	<image:title>Ap mockup image of Interview questionnaire</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/image6.png</image:loc>
+	<image:title>An image showing distribution of apps used for commute info and navigation among participants</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/image3.png</image:loc>
+	<image:title>Image showing distribution of reasons participants gave for using a specific app.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Persona%201.png</image:loc>
+	<image:title>An Image showing persona of Lily the White-collar</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Persona%202.png</image:loc>
+	<image:title>An image showing persona of Jake the Student.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Journey%20Map%202.png</image:loc>
+	<image:title>An image showing detailed journey map of Lily with touchpoints and opportunities.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Journey%20Map%201.png</image:loc>
+	<image:title>An image showing detailed journey map of Jake with touchpoints and opportunities.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/RealVentraMockup.png</image:loc>
+	<image:title>An image showing screenshots of vanilla Ventra app.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/20190916_135439.jpg</image:loc>
+	<image:title>A photo showing a person's hand tapping an icon on a paper prototype using a usability testing session.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202019-09-16%20at%205.01.49%20AM.png</image:loc>
+	<image:title>An image showing mid-fi prototype screenshots with arrows showing flow.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/VentraHiFi.png</image:loc>
+	<image:title>An image showing hi-fi prototype screenshots with arrows showing flow.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/ThreeWaysMockup.png</image:loc>
+	<image:title>A mockup detailing three ways of paying: Ventra PAss, Mobile app and Smartwatch App.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/S10IsometricMockup.png</image:loc>
+	<image:title>An image showing screenshots of mobile app in isometric perspective.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/GalaxyWatchMultipleMockups.png</image:loc>
+	<image:title>An image showing screenshots of Smartwatch app in isometric perspective.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/ScreenAssist_Home_Mockup.png</image:loc>
+	<image:title>Communication Assist desktop app project screenshot</image:title>
+	</image:image>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/RechargeDemo.mp4</video:content_loc>
+	<video:title>RechargeDemo</video:title>
+	</video:video>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/RightChoicesDemo.mp4</video:content_loc>
+	<video:title>RightChoicesDemo</video:title>
+	</video:video>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/NavigationDemo.mp4</video:content_loc>
+	<video:title>NavigationDemo</video:title>
+	</video:video>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
 </url>
 <url>
-<loc>https://cy56.work/communication-assist-desktop-app/index.html</loc>
-<lastmod>2020-09-26</lastmod>
-<changefreq>Weekly</changefreq>
-<priority>0.5</priority>
+	<loc>https://cy56.work/communication-assist.html</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/stephen-hawking-one-direction.jpg</image:loc>
+	<image:title>picture of stephen hawking</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/CACompete.png</image:loc>
+	<image:title>Image showing competitive analysis between various assistive devices</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/ComAsstPersona.png</image:loc>
+	<image:title>Image of a persona showing personality, goals, motivations and frustrations</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/ALS%20Journey.png</image:loc>
+	<image:title>Image showing journey map of a daily life of a person suffering with ALS</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/20190623_124341.jpg</image:loc>
+	<image:title>Photo of sketches showing breakdown of communication assist logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/20190623_124348.jpg</image:loc>
+	<image:title>Photo of sketch showing onboarding of Communication Assist.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screenshots.png</image:loc>
+	<image:title>Screenshots showing multiple screens of communication assist that users can use to say something.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Mood%20copy.jpg</image:loc>
+	<image:title>Image showing combination of images used for mood board</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Font.png</image:loc>
+	<image:title>Image showing font used in the UI of communication assist.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Color.png</image:loc>
+	<image:title>image showing various colors used as primary and secondary.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/UI.png</image:loc>
+	<image:title>Image showing various UI elements such as buttons, dropdowns and a few others</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Icons.png</image:loc>
+	<image:title>Image showing brand-new icons designed for communication assist</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Logo.png</image:loc>
+	<image:title>Image showing screen assist and communication assist logos in different racial skin colors</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/ScreenAsst_Modes_Of_Interaction.png</image:loc>
+	<image:title>image showing three modes of interaction with communication assist: touch, eye-tracking and track-ball</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/iPhone7-minimal-mockup.png</image:loc>
+	<image:title>BeDonor project screenshot</image:title>
+	</image:image>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/ScreenAssist_Loading2.mp4</video:content_loc>
+	<video:title>ScreenAssist_Loading2</video:title>
+	</video:video>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/CommunicationAssist_Open.mp4</video:content_loc>
+	<video:title>CommunicationAssist_Open</video:title>
+	</video:video>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/Composite_Texts.mp4</video:content_loc>
+	<video:title>Composite_Texts</video:title>
+	</video:video>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/Quick_Select.mp4</video:content_loc>
+	<video:title>Quick_Select</video:title>
+	</video:video>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/Pain.mp4</video:content_loc>
+	<video:title>Pain</video:title>
+	</video:video>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
 </url>
 <url>
-<loc>https://cy56.work/cyberdriveillinois-website/index.html</loc>
-<lastmod>2020-09-26</lastmod>
-<changefreq>Weekly</changefreq>
-<priority>0.5</priority>
+	<loc>https://cy56.work/bedonor.html</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/0abf7228854351.57185a08e835f.png</image:loc>
+	<image:title>Image showing three screenshots of Bedonor 1.0 app</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Extended%20Saving%20Mockup.png</image:loc>
+	<image:title>Image showing multiple screenshots of Benor app in phone mockups</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Mockupa.png</image:loc>
+	<image:title>Image showing pages of research paper in a mockup</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/visual%20harmony.png</image:loc>
+	<image:title>Image showing the breakdown of new logo and how it is different from old logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Logo%20Style%20Tile.png</image:loc>
+	<image:title>Image showing logo style tile with colors and font</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Mockup0a.png</image:loc>
+	<image:title>Image showing side-by-side comparison of new login screen and old login screen.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Mockup1.png</image:loc>
+	<image:title>Image showing side-by-side comparison of new home screen and old home screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Mockup2a.png</image:loc>
+	<image:title>Image showing side-by-side comparison of new achievements screen and old achievements screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Mockups3a.png</image:loc>
+	<image:title>Image showing side-by-side comparison of new donate screen and old donate screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/ad9b4d56722193.59b99bbec9807.png</image:loc>
+	<image:title>Communication Assist desktop app project screenshot</image:title>
+	</image:image>
+	<video:video>
+	<video:content_loc>https://cy56.work/vid/Comp_1__Converted__SparkVideo.mp4</video:content_loc>
+	<video:title>Comp_1__Converted__SparkVideo</video:title>
+	</video:video>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
 </url>
 <url>
-<loc>https://cy56.work/about/index.html</loc>
-<lastmod>2020-09-26</lastmod>
-<changefreq>Weekly</changefreq>
-<priority>0.5</priority>
+	<loc>https://cy56.work/shades.html</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/maxresdefault.jpg</image:loc>
+	<image:title>Raindow Six Vwgas 2 cover art</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/48791e56722193.59b9a4c249b1d.jpg</image:loc>
+	<image:title>Image showing bronze, silver and gold medals for different ranks</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/f9017956722193.59b9d33ec8d21.jpg</image:loc>
+	<image:title>Image showing icons for 51 different achievements</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/8e1db656722193.59b9a17c87dc2.jpg</image:loc>
+	<image:title>Image showing icons for various levels and achievements connected to them</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/50830c56722193.59b99bc03eae8.jpg</image:loc>
+	<image:title>Image showing a list of initial UI screenshots</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/a1b5ec56722193.59b99bc2a898f.jpg</image:loc>
+	<image:title>Screen for entering player name</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/7acdcc56722193.59b99bce90511.jpg</image:loc>
+	<image:title>Screen showing multiplayer session players waiting for session to start</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/add67956722193.59b99bd13da9e.jpg</image:loc>
+	<image:title>Image showing multiplayer session results</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/3ea43c56722193.59b99bd3e45ce.jpg</image:loc>
+	<image:title>Image showing failed single player mission</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/eafb7f56722193.59b99bd5363a6.jpg</image:loc>
+	<image:title>Image showing successful mission in singleplayer mode</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Home.png</image:loc>
+	<image:title>Home screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Weapons.png</image:loc>
+	<image:title>Weapons screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Player-Edit.png</image:loc>
+	<image:title>Player Edit screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Combat1.png</image:loc>
+	<image:title>Single player combat screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Combat2.jpg</image:loc>
+	<image:title>Multiplayer combat screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Shades%20-%20Combat%20Militia%20-%20Apps%20on%20Google%20Play.png</image:loc>
+	<image:title>Cached screenshot of Google Play Store page.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/StJude.png</image:loc>
+	<image:title>ALSAC project screenshot</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://cy56.work/about-me.html</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/IMG_2508.JPG</image:loc>
+	<image:title>Photo of Yogesh Singh wearing glasses near Chicago River.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/heart-sensor-image-2019.jpg</image:loc>
+	<image:title>Photo of Yogesh Singh with classmates testing their innovative and interactive art installation.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/0%2AHoGcQyXWYI1b45RO.jpg</image:loc>
+	<image:title>Cover image of Super App Medium article showing social app icon under microscope.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/UX_of_Jobs.jpg</image:loc>
+	<image:title>Cover image of better ux for jobs. Photo of a couple's feet pointing towards 'Passion led us here' sign on the ground.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screen%20Shot%202021-10-12%20at%201.27.19%20PM.png</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://cy56.work/experiments.html</loc>
+	<lastmod>2021-10-12</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/turmeric-powder.jpg</image:loc>
+	<image:title>turmeric powder</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/placeholder-image-wide.png</image:loc>
+	<image:title>slide 1</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/placeholder-image-wide.png</image:loc>
+	<image:title>slide 2</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/placeholder-image-wide.png</image:loc>
+	<image:title>slide 3</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
 </url>
 </urlset>

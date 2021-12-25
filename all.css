@@ -12544,7 +12544,7 @@ a {
 }
 
 .tag-button-dark {
-    background-color: #50503F;
+    background-color: #C7C3B5;
     background-size: length;
     font-family: "Montserrat";
     text-align: left;
@@ -12552,7 +12552,7 @@ a {
     float: none;
     display: inline-flex;
     font-size: 0.8rem;
-    color: #F0EFEB !important;
+    color: #50503F !important;
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     border-radius: 50px 50px 50px 50px;

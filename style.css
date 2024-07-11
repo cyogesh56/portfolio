@@ -970,7 +970,15 @@ a{
 .card-button:hover{
 	padding:2rem 2rem 2rem 2rem;
 	border-width:0px 0px 0px 0px;
-	text-decoration:underline!important;
+	text-decoration:underline !important;
+	transition: transform 300ms;
+	will-change: transform;
+	transform: translateX(4px);
+}
+.card-button:active{
+	padding:2rem 2rem 2rem 2rem !important;
+	border-width:0px 0px 0px 0px;
+	text-decoration:underline !important;
 	transition: transform 300ms;
 	will-change: transform;
 	transform: translateX(4px);

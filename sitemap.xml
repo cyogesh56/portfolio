@@ -2,45 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
 	<loc>https://cy56.work</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>1.0</priority>
 	<image:image>
 	<image:loc>https://cy56.work/img/StJude.png</image:loc>
-	<image:title>StJude</image:title>
+	<image:title>ALSAC Project Cover Image</image:title>
 	</image:image>
 	<image:image>
-	<image:loc>https://cy56.work/img/Continental_logo_locked-2.png</image:loc>
-	<image:title>StJude</image:title>
+	<image:loc>https://cy56.work/img/Continental_logo_locked-1.png</image:loc>
+	<image:title>Continental Project Cover Image</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/MultipleDevicesMockup.png</image:loc>
-	<image:title>StJude</image:title>
+	<image:title>Ventra Chicago Project Cover Image</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/ad9b4d56722193.59b99bbec9807.png</image:loc>
-	<image:title>StJude</image:title>
+	<image:title>Shades Project Cover Image</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/iPhone7-minimal-mockup.png</image:loc>
-	<image:title>StJude</image:title>
+	<image:title>Blood Donation Project Cover Image</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/ScreenAssist_Home_Mockup.png</image:loc>
-	<image:title>StJude</image:title>
+	<image:title>ALS Project Cover Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/0_HoGcQyXWYI1b45RO.jpg</image:loc>
+	<image:title>Super App Medium Article Cover Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/UX_of_Jobs.jpg</image:loc>
+	<image:title>Better Job Applications Medium Article Cover Image</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%206.51.33%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
 	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
-	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/alsac-experience-design/</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -119,6 +123,10 @@
 	<image:loc>https://cy56.work/img/UCD-Micro-Workshop-Agendas-–-4a.png</image:loc>
 	<image:title>Image showing agendas of UCD workshops</image:title>
 	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Continental_logo_locked.png</image:loc>
+	<image:title>Continental Project Cover Image</image:title>
+	</image:image>
 	<video:video>
 	<video:content_loc>https://cy56.work/vid/BrandCentral.mp4</video:content_loc>
 	<video:title>BrandCentral</video:title>
@@ -131,14 +139,10 @@
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%207.01.51%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
 	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
-	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/continental-ag-ux-design/</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -173,14 +177,10 @@
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.26.56%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
 	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
-	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/ventra-chicago-ux-design/</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -189,7 +189,7 @@
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/Screen-Shot-2019-09-16-at-3.25.11-AM.png</image:loc>
-	<image:title>Bar Chart showing feature usage distribution</image:title>
+	<image:title>Screenshot showing competitive analysis between different apps</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/image6.png</image:loc>
@@ -255,14 +255,10 @@
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.27.25%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
 	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
-	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/shades-ui-design/</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -349,14 +345,10 @@
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.27.43%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
 	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
-	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/blood-donation-research-and-experience-design/</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -447,14 +439,10 @@
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.28.03%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
 	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
-	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/als-assist-desktop-os-concept/</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -521,19 +509,19 @@
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.28.22%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
 	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
-	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/about-me/</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
 	<image:loc>https://cy56.work/img/Yogesh%20Singh%20Crop%20Clean-TP%202.png</image:loc>
 	<image:title>Yogesh Singh-Square-Gradient</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/20200220_104633.jpg</image:loc>
+	<image:title>Image showing people having a discussion in a conference room.</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/heart-sensor-image-2019.jpg</image:loc>
@@ -544,31 +532,15 @@
 	<image:title>Image showing a classroom with a lecture given by two people.</image:title>
 	</image:image>
 	<image:image>
-	<image:loc>https://cy56.work/img/20200220_104633.jpg</image:loc>
-	<image:title>Image showing people having a discussion in a conference room.</image:title>
-	</image:image>
-	<image:image>
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.38.42%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
-	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
 	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/unfiltered/</loc>
-	<lastmod>2024-02-25</lastmod>
+	<lastmod>2024-07-10</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
-	<image:image>
-	<image:loc>https://cy56.work/img/0_HoGcQyXWYI1b45RO.jpg</image:loc>
-	<image:title>StJude</image:title>
-	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/UX_of_Jobs.jpg</image:loc>
-	<image:title>StJude</image:title>
-	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/20180703_171850.jpg</image:loc>
 	<image:title>Image showing a Makeshift cardboard AR headset</image:title>
@@ -672,10 +644,6 @@
 	<image:image>
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.39.03%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
-	</image:image>
-	<image:image>
-	<image:loc>https://cy56.work/img/</image:loc>
-	<image:title>Facebook Social Card Image</image:title>
 	</image:image>
 </url>
 </urlset>

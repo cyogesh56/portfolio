@@ -2,11 +2,9 @@
 	Yogesh Singh Portfolio
 	About: Yogesh Singh is an Experience Designer, working with teams and individuals to create humane experiences that ease people's lives.
 	Author: Yogesh Singh
-	Version: 5.5
+	Version: 4.0
 	Built with Blocs
 -----------------------------------------------------------------------------------*/
-
-
 body {
 	margin: 0;
 	padding: 0;
@@ -14,7 +12,10 @@ body {
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+}
+
+video {
+	border-radius: 20px;
 }
 
 .page-container {
@@ -144,6 +145,15 @@ nav .dropdown-menu .nav-link {
 	font-family: 'Mukta-SemiBold';
 	src: url('./fonts/Mukta-SemiBold/mukta.woff2');
 	src: url('./fonts/Mukta-SemiBold/mukta.woff2') format('woff2'), url('./fonts/Mukta-SemiBold/mukta.eot?#iefix') format('embedded-opentype'), url('./fonts/Mukta-SemiBold/mukta.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mukta-Medium';
+	src: url('./fonts/Mukta-Medium/mukta.woff2');
+	src: url('./fonts/Mukta-Medium/mukta.woff2') format('woff2'), url('./fonts/Mukta-Medium/mukta.eot?#iefix') format('embedded-opentype'), url('./fonts/Mukta-Medium/mukta.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -479,6 +489,11 @@ nav .dropdown-menu .nav-link {
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
+.b-divider-dashed {
+	border-top: 1px dashed rgba(0, 0, 0, .1);
+	border-bottom: 1px dashed rgba(0, 0, 0, .1);
+}
+
 .sticky-nav.sticky {
 	position: fixed;
 	top: 0;
@@ -767,9 +782,9 @@ button {
 .carousel-nav-icon {
 	fill: none;
 	stroke: #fff;
-	stroke-width: 2px;
 	fill-rule: evenodd;
 	stroke-linecap: round;
+	stroke-width: 4px;
 }
 
 .carousel-indicators li::marker {
@@ -818,9 +833,8 @@ a[data-lightbox]:hover::before {
 	margin-left: -25px;
 	border-radius: 50%;
 	background: rgba(0, 0, 0, .5);
-	backdrop-filter: blur(20px);
 	color: #FFF;
-	font-weight: 300;
+	font-weight: 100;
 	z-index: 1;
 	position: absolute;
 	top: 50%;
@@ -875,11 +889,11 @@ a[data-lightbox]:hover img {
 }
 
 .next-lightbox {
-	right: 25px;
+	right: 0px;
 }
 
 .prev-lightbox {
-	left: 25px;
+	left: 0px;
 }
 
 .lightbox-prev-icon,
@@ -922,17 +936,16 @@ a[data-lightbox]:hover img {
 }
 
 .close-full-screen-modal {
-	position: fixed;
-	display: block;
-	width: 25px;
-	height: 25px;
-	top: 16px;
-	right: 16px;
-	z-index: 10000;
-	
+	padding: 1rem 1rem 1rem 1rem;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
-	border-radius: 8px 8px 8px 8px;
+	border-radius: 8px;
+	border: 1px solid rgba(256, 256, 256, 0.4);
+	position: fixed;
+	display: block;
+	top: 10px;
+	right: 10px;
+	z-index: 10000;
 }
 
 .close-full-screen-modal .close-icon {
@@ -1019,12 +1032,12 @@ a[data-lightbox]:hover img {
 }
 
 .blocs-round-btn {
-	background: rgba(0, 0, 0, 0.20);
-	border-radius: 100%;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
 	padding: 12px;
-	opacity: 1;
+	border: 1px solid rgba(256, 256, 256, 0.4);
 	cursor: pointer;
-	transform: scale(0.8);
+	transform: scale(0.75);
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	transition: opacity .50s ease, transform .50s ease;
@@ -1087,7 +1100,7 @@ p,
 label,
 .btn,
 a {
-	font-family: "AnekLatinMedium-Medium";
+	font-family: "Helvetica";
 }
 
 .container {
@@ -1251,14 +1264,6 @@ a {
 	text-transform: uppercase;
 }
 
-.cta-card {
-	border-radius: 20px 20px 20px 20px;
-	padding: 0px 0px 0px 0px;
-	border-width: 1px 1px 1px 1px;
-	border-style: solid;
-	border-color: var(--swatch-var-6783) !important;
-}
-
 .alert-heading {
 	color: var(--swatch-var-156) !important;
 	text-transform: uppercase;
@@ -1331,19 +1336,21 @@ a {
 }
 
 .prev-lightbox {
-	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	padding: 1rem 1rem 1rem 1rem;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	position: fixed;
-	border-radius: 8px 8px 8px 8px;
+	border-radius: 0px 8px 8px 0px;
+	border: 1px solid rgba(256, 256, 256, 0.4);
 }
 
 .next-lightbox {
-	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	padding: 1rem 1rem 1rem 1rem;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	position: fixed;
-	border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 0px 0px 8px;
+	border: 1px solid rgba(256, 256, 256, 0.4);
 }
 
 .close-lightbox {
@@ -1354,12 +1361,6 @@ a {
 	background-color: var(--swatch-var-6783);
 	width: 32px;
 	height: 32px;
-}
-
-.carousel-nav-icon {
-	filter: invert(50%);
-	stroke-width: 4px;
-	stroke: var(--swatch-var-2869);
 }
 
 .scrollToTop {
@@ -1374,11 +1375,6 @@ a {
 
 .carousel-control {
 	width: 8%;
-}
-
-.promo-card {
-	background-color: var(--swatch-var-419);
-	box-shadow: 0.00px 6.00px 10px rgba(0, 0, 0, 0.17);
 }
 
 .hero-image {
@@ -1416,11 +1412,6 @@ a {
 	fill: var(--swatch-var-3368) !important;
 }
 
-.secondary-btn-icon:hover {
-	color: var(--swatch-var-2936) !important;
-	fill: var(--swatch-var-2936);
-}
-
 .active-page-link {
 	border-bottom-width: 3px;
 	border-style: solid;
@@ -1445,16 +1436,6 @@ a {
 	border-radius: 8px 8px 8px 8px;
 }
 
-.promo-card-video {
-	border-bottom-left-radius: 16px !important;
-	border-bottom-right-radius: 16px !important;
-}
-
-.feature-details-col {
-	padding-left: 2rem;
-	padding-right: 1rem;
-}
-
 .card {
 	border-width: 0px 0px 0px 0px;
 	border-color: var(--swatch-var-6783) !important;
@@ -1466,8 +1447,29 @@ a {
 	box-shadow: 0.00px 2.00px 8px rgba(0, 0, 0, 0.17);
 }
 
-.card-button-icon:hover {
-	fill: var(--swatch-var-3368);
+.numners-card-heading {
+	font-family: "AnekLatinMedium-Bold";
+	font-size: 3rem;
+}
+
+.pill {
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: var(--swatch-var-3946) !important;
+	padding: 8px 16px 8px 16px;
+	font-family: "AnekLatinMedium-Regular";
+	color: var(--swatch-var-2869) !important;
+	background-color: var(--swatch-var-6790);
+	border-radius: 8px 8px 8px 8px;
+	margin-right: 8px;
+}
+
+.pill-context {
+	margin-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-family: "Mukta-Medium";
+	color: var(--swatch-var-2869) !important;
 }
 
 :root {
@@ -1501,6 +1503,10 @@ a {
 
 .bgc-419 {
 	background-color: var(--swatch-var-419);
+}
+
+.bgc-4915 {
+	background-color: var(--swatch-var-4915);
 }
 
 .tc-3368 {
@@ -1539,7 +1545,6 @@ a {
 
 .btn-c-3368 {
 	background: var(--swatch-var-3368);
-	color: rgba(0, 0, 0, .5) !important;
 }
 
 .btn-c-3368:hover {
@@ -1639,12 +1644,7 @@ a {
 }
 
 .card-image {
-	border-radius: 12px;
-}
-
-video {
-	border-radius: 12px;
-	box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+	border-radius: 20px;
 }
 
 @media (min-width: 576px) {
@@ -1804,15 +1804,6 @@ video {
 		font-size: 1.5rem;
 	}
 
-	.cta-card {
-		border-radius: 20px 20px 20px 20px;
-	}
-
-	.feature-details-col {
-		margin-bottom: 0px;
-		text-align: center;
-	}
-
 	.card-button {}
 
 	.projects-row {
@@ -1833,21 +1824,16 @@ video {
 	.round-video {
 		border-radius: 4px 4px 4px 4px !important;
 	}
+
+	.numners-card-heading {
+		font-size: 2.5rem;
+	}
 }
 
 @media (max-width: 767px) {
 	.project-desc {
 		font-size: 1.25rem;
 		line-height: 2.5rem;
-	}
-
-	.cta-card {
-		padding: 0px 0px 0px 0px;
-	}
-
-	.feature-details-col {
-		text-align: center;
-		margin-bottom: 0px;
 	}
 
 	.projects-row {
@@ -1877,6 +1863,10 @@ video {
 	.card {
 		margin-bottom: 2rem;
 	}
+
+	.numners-card-heading {
+		font-size: 2.5rem;
+	}
 }
 
 @media (max-width: 575px) {
@@ -1885,15 +1875,9 @@ video {
 		line-height: 2rem;
 	}
 
-	.cta-card {}
-
 	.card-button {}
 
 	.card-button:hover {}
-
-	.feature-details-col {
-		margin-bottom: 0px;
-	}
 
 	.projects-row {
 		padding-left: 1rem;
@@ -1922,4 +1906,19 @@ video {
 	.round-video {
 		border-radius: 4px 4px 4px 4px !important;
 	}
+
+	.numners-card-heading {
+		font-size: 2.5rem;
+	}
+}
+
+.carousel-btn {
+	background: rgba(0, 0, 0, 0.3);
+	width: 48px;
+	height: 48px;
+	padding: 8px;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 8px;
+	border: 1px solid rgba(256, 256, 256, 0.4);
 }

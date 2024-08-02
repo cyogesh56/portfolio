@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
 	<loc>https://cy56.work</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>1.0</priority>
 	<image:image>
@@ -44,7 +44,7 @@
 </url>
 <url>
 	<loc>https://cy56.work/alsac-experience-design/</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -142,7 +142,7 @@
 </url>
 <url>
 	<loc>https://cy56.work/continental-ag-ux-design/</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -180,7 +180,7 @@
 </url>
 <url>
 	<loc>https://cy56.work/ventra-chicago-ux-design/</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -258,7 +258,7 @@
 </url>
 <url>
 	<loc>https://cy56.work/shades-ui-design/</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -348,7 +348,7 @@
 </url>
 <url>
 	<loc>https://cy56.work/blood-donation-research-and-experience-design/</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -436,13 +436,21 @@
 	<image:title>Image showing wireframe screenshots used to create the flow of screens for blood donation</image:title>
 	</image:image>
 	<image:image>
+	<image:loc>https://cy56.work/img/IMG_0046.jpg</image:loc>
+	<image:title>Image showing people interacting with St. Jude Blood Donor Center Recruiter at a booth.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/IMG_0043.jpg</image:loc>
+	<image:title>Image showing the call to donate blood banner in a conference room.</image:title>
+	</image:image>
+	<image:image>
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.28.03%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
 	</image:image>
 </url>
 <url>
 	<loc>https://cy56.work/als-assist-desktop-os-concept/</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -512,7 +520,7 @@
 </url>
 <url>
 	<loc>https://cy56.work/about-me/</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -520,8 +528,8 @@
 	<image:title>Yogesh Singh-Square-Gradient</image:title>
 	</image:image>
 	<image:image>
-	<image:loc>https://cy56.work/img/20200220_104633.jpg</image:loc>
-	<image:title>Image showing people having a discussion in a conference room.</image:title>
+	<image:loc>https://cy56.work/img/Image%20%281%29.jpeg</image:loc>
+	<image:title>Image showing virtual and in-person people collaborating in a meeting room.</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://cy56.work/img/heart-sensor-image-2019.jpg</image:loc>
@@ -538,7 +546,7 @@
 </url>
 <url>
 	<loc>https://cy56.work/unfiltered/</loc>
-	<lastmod>2024-07-10</lastmod>
+	<lastmod>2024-07-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -644,6 +652,28 @@
 	<image:image>
 	<image:loc>https://cy56.work/img/Screen%20Shot%202024-02-24%20at%208.39.03%20PM.png</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://cy56.work/alsac-experience/</loc>
+	<lastmod>2024-07-30</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screenshot%202021-06-28%20at%2014-08-56%20Home%20page%281%29.png</image:loc>
+	<image:title>Screenshot of kit confirmation portal with options to confirm event details.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Screenshot%202021-06-28%20at%2014-09-30%20Edit%20Event%20Information.png</image:loc>
+	<image:title>Screenshot of kit confirmation portal showing the ability to modify event information.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Demo-1.png</image:loc>
+	<image:title>Screenshot of brand asset management software on desktop and mobile illustrating various features for search and navigation.</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://cy56.work/img/Demo-2.png</image:loc>
+	<image:title>Screenshot of brand asset management app illustrating download and sharing features on desktop and mobile.</image:title>
 	</image:image>
 </url>
 </urlset>

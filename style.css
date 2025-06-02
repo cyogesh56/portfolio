@@ -1441,6 +1441,11 @@ a {
 	border-color: var(--swatch-var-6783) !important;
 	box-shadow: 0.00px 2.00px 4px rgba(0, 0, 0, 0.17);
 	border-radius: 20px 20px 20px 20px;
+	align-self: stretch !important;
+}
+
+.card-body {
+	display: grid !important;
 }
 
 .card:hover {

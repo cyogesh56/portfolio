@@ -1439,9 +1439,10 @@ a {
 .card {
 	border-width: 0px 0px 0px 0px;
 	border-color: var(--swatch-var-6783) !important;
-	box-shadow: 0.00px 2.00px 4px rgba(0, 0, 0, 0.17);
-	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0.00px 2.00px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px 24px 24px 24px;
 	align-self: stretch !important;
+	transition: all 0.4s ease-in-out;
 }
 
 .card-body {
@@ -1649,7 +1650,7 @@ a {
 }
 
 .card-image {
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 @media (min-width: 576px) {

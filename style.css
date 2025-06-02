@@ -1179,6 +1179,8 @@ a {
 
 .card-button {
 	font-family: "AnekLatinMedium-SemiBold";
+	height: 48px !important;
+	align-self: flex-end;
 }
 
 .card-image {
